@@ -1,0 +1,198 @@
+.login-page {
+  background:
+    radial-gradient(circle at 47% 42%, rgba(255, 255, 255, 0.92), transparent 33%),
+    linear-gradient(180deg, #f3f3f1 0%, #ededeb 100%);
+}
+
+.bocca-logo {
+  font-family: Impact, "Arial Narrow", "Franklin Gothic Heavy", sans-serif;
+  font-size: clamp(1.75rem, 2.4vw, 2.55rem);
+  font-weight: 900;
+  letter-spacing: 0.035em;
+  line-height: 0.9;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.food-float {
+  position: absolute;
+  display: block;
+  height: auto;
+  max-width: none;
+  object-fit: contain;
+  user-select: none;
+  will-change: transform;
+  animation: food-float 6.375s ease-in-out infinite;
+}
+
+.food-float-pizza {
+  top: -2.5rem;
+  left: -0.75rem;
+  width: clamp(11.2rem, 18.4vw, 19.2rem);
+  animation-duration: 7.14s;
+}
+
+.food-float-stack {
+  bottom: -5.5rem;
+  left: -3.5rem;
+  width: clamp(12.5rem, 22vw, 25rem);
+  animation-duration: 6.12s;
+  animation-delay: -1.8s;
+}
+
+.food-float-burger {
+  top: 22%;
+  right: -1.25rem;
+  width: clamp(10rem, 18vw, 23rem);
+  animation-duration: 7.565s;
+  animation-delay: -3.1s;
+}
+
+.login-card {
+  --focus: #b87333;
+  --primary: #1f1a17;
+  --primary-hover: #332a25;
+}
+
+.login-input {
+  width: 100%;
+  border: 1px solid rgba(70, 54, 43, 0.16);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #1f1a17;
+  outline: none;
+  padding: 15px 16px;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.login-input::placeholder {
+  color: #99897b;
+}
+
+.login-input:focus,
+.login-input:focus-visible {
+  border-color: var(--focus);
+  box-shadow: 0 0 0 4px rgba(184, 115, 51, 0.16);
+}
+
+.forgot-link {
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.forgot-link:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.login-button {
+  width: 100%;
+  border: 0;
+  border-radius: 16px;
+  background: linear-gradient(180deg, var(--primary), #0d0b09);
+  box-shadow: 0 16px 30px rgba(22, 16, 12, 0.2);
+  color: #fffaf2;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 15px 18px;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    background 160ms ease;
+}
+
+.login-button:hover {
+  background: linear-gradient(180deg, var(--primary-hover), #181310);
+}
+
+.login-button:active {
+  transform: translateY(1px);
+}
+
+.login-button:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 4px rgba(184, 115, 51, 0.18),
+    0 16px 30px rgba(22, 16, 12, 0.2);
+}
+
+.culture-title {
+  letter-spacing: 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+@keyframes food-float {
+  0%,
+  100% {
+    transform: translate3d(0, -8.8px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 9.9px, 0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .food-float-pizza {
+    opacity: 0.9;
+    top: -2rem;
+    left: -0.5rem;
+    width: clamp(8.8rem, 19.2vw, 15.2rem);
+  }
+
+  .food-float-stack {
+    bottom: -5rem;
+    left: -4rem;
+    width: clamp(10.5rem, 27vw, 18.5rem);
+  }
+
+  .food-float-burger {
+    opacity: 0.88;
+    right: -3.75rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .bocca-logo {
+    left: 1.125rem;
+    top: 1.125rem;
+  }
+
+  .food-float-pizza {
+    top: -1.5rem;
+    left: -1.5rem;
+    width: 10rem;
+  }
+
+  .food-float-stack {
+    bottom: -4.5rem;
+    left: -6.5rem;
+    width: 13rem;
+    opacity: 0.76;
+  }
+
+  .food-float-burger {
+    top: 9.5rem;
+    right: -6.25rem;
+    width: 13rem;
+    opacity: 0.72;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .food-float {
+    animation: none;
+  }
+
+  .login-button,
+  .login-input {
+    transition: none;
+  }
+}
