@@ -1,0 +1,97 @@
+{
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\.eslintrc.json": {
+    "mtime": 1779625298.3064451,
+    "ast_hash": "6c636976577d27c2ebdc12da2f6f2b56",
+    "semantic_hash": "6c636976577d27c2ebdc12da2f6f2b56"
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\next-env.d.ts": {
+    "mtime": 1779625403.1271787,
+    "ast_hash": "b5ed9dd8b4c5ba8e5ab8e6a379c15838",
+    "semantic_hash": "b5ed9dd8b4c5ba8e5ab8e6a379c15838"
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\next.config.mjs": {
+    "mtime": 1779625297.8913527,
+    "ast_hash": "21958f5752add43cc47ab0ff5172cd46",
+    "semantic_hash": "21958f5752add43cc47ab0ff5172cd46"
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\package.json": {
+    "mtime": 1779627132.9028158,
+    "ast_hash": "ebbc3226691f7da88e9773b26be04da8",
+    "semantic_hash": "ebbc3226691f7da88e9773b26be04da8"
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\postcss.config.mjs": {
+    "mtime": 1779625297.995866,
+    "ast_hash": "d3fd1d29b05a09ff76b595a70e1e7d50",
+    "semantic_hash": "d3fd1d29b05a09ff76b595a70e1e7d50"
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\tailwind.config.ts": {
+    "mtime": 1779625298.102392,
+    "ast_hash": "05581f3af1cb0eac64e04ceb400a020f",
+    "semantic_hash": "05581f3af1cb0eac64e04ceb400a020f"
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\tsconfig.json": {
+    "mtime": 1779625306.111778,
+    "ast_hash": "4548705d003d6dad4b6540061912c3af",
+    "semantic_hash": "4548705d003d6dad4b6540061912c3af"
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\app\\layout.tsx": {
+    "mtime": 1779625298.4149735,
+    "ast_hash": "658eecd202fc0425c3ebe9b7a8f537e4",
+    "semantic_hash": "658eecd202fc0425c3ebe9b7a8f537e4"
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\app\\page.tsx": {
+    "mtime": 1779625298.520518,
+    "ast_hash": "77a49d5981873dccc433d1b457da2b95",
+    "semantic_hash": "77a49d5981873dccc433d1b457da2b95"
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\app\\login\\page.tsx": {
+    "mtime": 1779630731.4388447,
+    "ast_hash": "74cda691ce4a99a8c07ac33adb891dea",
+    "semantic_hash": "74cda691ce4a99a8c07ac33adb891dea"
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\components\\login\\LoginCard.tsx": {
+    "mtime": 1779708640.184026,
+    "ast_hash": "050bba7104614c4a566fbd2dc1fd2617",
+    "semantic_hash": "050bba7104614c4a566fbd2dc1fd2617"
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\scripts\\login.ts": {
+    "mtime": 1779625298.8446484,
+    "ast_hash": "76cc6be44ec888aa6e91b662bb834d3f",
+    "semantic_hash": "76cc6be44ec888aa6e91b662bb834d3f"
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\CLAUDE.md": {
+    "mtime": 1779547387.2045944,
+    "ast_hash": "13b257101f94ec5feceded4f4c1b7feb",
+    "semantic_hash": "13b257101f94ec5feceded4f4c1b7feb"
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Readme.md": {
+    "mtime": 1779790032.9591167,
+    "ast_hash": "ed3c02a63d624d922d4a7167c7de112b",
+    "semantic_hash": "ed3c02a63d624d922d4a7167c7de112b"
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\.playwright-mcp\\page-2026-05-24T12-52-47-424Z.yml": {
+    "mtime": 1779627167.425881,
+    "ast_hash": "a5d86dc0a6ecdddab5dde01c26d6a160",
+    "semantic_hash": "a5d86dc0a6ecdddab5dde01c26d6a160"
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\app\\icon.svg": {
+    "mtime": 1779625634.3494985,
+    "ast_hash": "96e8dc54635b1341f601fb711683bdb7",
+    "semantic_hash": "96e8dc54635b1341f601fb711683bdb7"
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\burger-right.png": {
+    "mtime": 1779625251.6237803,
+    "ast_hash": "f79aa7d66d3b0a88f4c4e29a2648de62",
+    "semantic_hash": "f79aa7d66d3b0a88f4c4e29a2648de62"
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\burger-stack.png": {
+    "mtime": 1779706161.3983893,
+    "ast_hash": "59edac516bd53b5642faac7de2ab1adb",
+    "semantic_hash": "59edac516bd53b5642faac7de2ab1adb"
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\pizza-quarter.png": {
+    "mtime": 1779708066.2499788,
+    "ast_hash": "c2c0b9b341ce95b55230f7c6421e8881",
+    "semantic_hash": "c2c0b9b341ce95b55230f7c6421e8881"
+  }
+}

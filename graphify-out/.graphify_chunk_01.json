@@ -1,0 +1,543 @@
+{
+  "nodes": [
+    {
+      "id": "eslintrc_next_core_web_vitals",
+      "label": "ESLint next/core-web-vitals",
+      "file_type": "code",
+      "source_file": "Frontend/.eslintrc.json",
+      "source_location": "extends",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "nextenv_typescript_references",
+      "label": "Next.js TypeScript ambient references",
+      "file_type": "code",
+      "source_file": "Frontend/next-env.d.ts",
+      "source_location": "1-4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "nextconfig_default_export",
+      "label": "Default Next.js configuration",
+      "file_type": "code",
+      "source_file": "Frontend/next.config.mjs",
+      "source_location": "2-4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "packagejson_boccacafe_inventory_frontend",
+      "label": "boccacafe-inventory-frontend npm package",
+      "file_type": "code",
+      "source_file": "Frontend/package.json",
+      "source_location": "1-29",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Next 14.2.30 and React 18.3.1 SPA; predev/dev:fresh scripts clear .next cache before dev for reliable hot reload."
+    },
+    {
+      "id": "postcss_tailwind_autoprefixer",
+      "label": "PostCSS Tailwind + Autoprefixer pipeline",
+      "file_type": "code",
+      "source_file": "Frontend/postcss.config.mjs",
+      "source_location": "1-8",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tailwind_bocca_design_tokens",
+      "label": "Bocca brand Tailwind theme tokens",
+      "file_type": "code",
+      "source_file": "Frontend/tailwind.config.ts",
+      "source_location": "11-27",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Custom bocca color palette, display/sans fonts, and login-card shadow define cafe-branded login UI."
+    },
+    {
+      "id": "tailwind_content_scan_paths",
+      "label": "Tailwind content scan globs",
+      "file_type": "code",
+      "source_file": "Frontend/tailwind.config.ts",
+      "source_location": "4-8",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tsconfig_path_alias_at",
+      "label": "TypeScript @/* path alias",
+      "file_type": "code",
+      "source_file": "Frontend/tsconfig.json",
+      "source_location": "13-15",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "layout_root_layout",
+      "label": "RootLayout",
+      "file_type": "code",
+      "source_file": "Frontend/app/layout.tsx",
+      "source_location": "10-19",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "layout_login_focused_metadata",
+      "label": "Login-focused site metadata",
+      "file_type": "code",
+      "source_file": "Frontend/app/layout.tsx",
+      "source_location": "5-8",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "page_home_page",
+      "label": "HomePage",
+      "file_type": "code",
+      "source_file": "Frontend/app/page.tsx",
+      "source_location": "3-5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Root route immediately redirects visitors to /login rather than a dashboard."
+    },
+    {
+      "id": "page_login_page",
+      "label": "LoginPage",
+      "file_type": "code",
+      "source_file": "Frontend/app/login/page.tsx",
+      "source_location": "28-67",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "login_page_food_decorations",
+      "label": "foodItems floating hero images",
+      "file_type": "code",
+      "source_file": "Frontend/app/login/page.tsx",
+      "source_location": "4-26",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "logincard_login_card",
+      "label": "LoginCard",
+      "file_type": "code",
+      "source_file": "Frontend/components/login/LoginCard.tsx",
+      "source_location": "6-64",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "logincard_handle_submit",
+      "label": "LoginCard handleSubmit",
+      "file_type": "code",
+      "source_file": "Frontend/components/login/LoginCard.tsx",
+      "source_location": "9-13",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Client-side submit builds payload and sets status text only; no API or auth provider call yet."
+    },
+    {
+      "id": "login_build_login_payload",
+      "label": "buildLoginPayload",
+      "file_type": "code",
+      "source_file": "Frontend/scripts/login.ts",
+      "source_location": "44-52",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "login_login_fields",
+      "label": "loginFields",
+      "file_type": "code",
+      "source_file": "Frontend/scripts/login.ts",
+      "source_location": "17-36",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "login_remember_field",
+      "label": "rememberField",
+      "file_type": "code",
+      "source_file": "Frontend/scripts/login.ts",
+      "source_location": "38-42",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "login_login_payload_type",
+      "label": "LoginPayload",
+      "file_type": "code",
+      "source_file": "Frontend/scripts/login.ts",
+      "source_location": "11-15",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "login_login_field_type",
+      "label": "LoginField",
+      "file_type": "code",
+      "source_file": "Frontend/scripts/login.ts",
+      "source_location": "1-9",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "claude_boccacafe_inventory_project",
+      "label": "BoccaCafe-Inventory project",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "7-8",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Inventory management system for Bocca Cafe; guidance file still describes Frontend/Backend as empty despite implemented login UI."
+    },
+    {
+      "id": "claude_separated_frontend_backend",
+      "label": "Separated frontend/backend architecture",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": "11-18",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Repository layout anticipates Backend/ API and Frontend/ UI split; backend not yet implemented in this chunk."
+    },
+    {
+      "id": "readme_smart_inventory_tagline",
+      "label": "Smart inventory solutions for Bocca Cafe",
+      "file_type": "document",
+      "source_file": "Readme.md",
+      "source_location": "1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "playwright_login_page_snapshot",
+      "label": "Playwright accessibility tree of login page",
+      "file_type": "document",
+      "source_file": ".playwright-mcp/page-2026-05-24T12-52-47-424Z.yml",
+      "source_location": "1-31",
+      "source_url": null,
+      "captured_at": "2026-05-24T12:52:47.424Z",
+      "author": null,
+      "contributor": null,
+      "rationale": "Captured UI shows Welcome back, Secure access, and form status copy that differ from current LoginCard source."
+    }
+  ],
+  "edges": [
+    {
+      "source": "logincard_handle_submit",
+      "target": "login_build_login_payload",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/components/login/LoginCard.tsx",
+      "source_location": "11",
+      "weight": 1.0
+    },
+    {
+      "source": "page_home_page",
+      "target": "page_login_page",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/app/page.tsx",
+      "source_location": "4",
+      "weight": 1.0
+    },
+    {
+      "source": "page_login_page",
+      "target": "logincard_login_card",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/app/login/page.tsx",
+      "source_location": "54",
+      "weight": 1.0
+    },
+    {
+      "source": "page_login_page",
+      "target": "login_page_food_decorations",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/app/login/page.tsx",
+      "source_location": "40-50",
+      "weight": 1.0
+    },
+    {
+      "source": "logincard_login_card",
+      "target": "login_login_fields",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/components/login/LoginCard.tsx",
+      "source_location": "25",
+      "weight": 1.0
+    },
+    {
+      "source": "logincard_login_card",
+      "target": "login_remember_field",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/components/login/LoginCard.tsx",
+      "source_location": "43-50",
+      "weight": 1.0
+    },
+    {
+      "source": "logincard_handle_submit",
+      "target": "login_login_payload_type",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Frontend/components/login/LoginCard.tsx",
+      "source_location": "11-12",
+      "weight": 1.0
+    },
+    {
+      "source": "login_build_login_payload",
+      "target": "login_login_payload_type",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/scripts/login.ts",
+      "source_location": "44-51",
+      "weight": 1.0
+    },
+    {
+      "source": "login_login_fields",
+      "target": "login_login_field_type",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/scripts/login.ts",
+      "source_location": "17",
+      "weight": 1.0
+    },
+    {
+      "source": "layout_root_layout",
+      "target": "layout_login_focused_metadata",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/app/layout.tsx",
+      "source_location": "5-8",
+      "weight": 1.0
+    },
+    {
+      "source": "layout_root_layout",
+      "target": "page_login_page",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Frontend/app/layout.tsx",
+      "source_location": "2-7",
+      "weight": 1.0
+    },
+    {
+      "source": "tailwind_bocca_design_tokens",
+      "target": "page_login_page",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Frontend/app/login/page.tsx",
+      "source_location": "30",
+      "weight": 1.0
+    },
+    {
+      "source": "tailwind_bocca_design_tokens",
+      "target": "logincard_login_card",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Frontend/components/login/LoginCard.tsx",
+      "source_location": "16",
+      "weight": 1.0
+    },
+    {
+      "source": "tailwind_content_scan_paths",
+      "target": "logincard_login_card",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Frontend/tailwind.config.ts",
+      "source_location": "6",
+      "weight": 1.0
+    },
+    {
+      "source": "postcss_tailwind_autoprefixer",
+      "target": "tailwind_bocca_design_tokens",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Frontend/postcss.config.mjs",
+      "source_location": "3-4",
+      "weight": 1.0
+    },
+    {
+      "source": "packagejson_boccacafe_inventory_frontend",
+      "target": "nextconfig_default_export",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Frontend/package.json",
+      "source_location": "8-9",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_smart_inventory_tagline",
+      "target": "claude_boccacafe_inventory_project",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Readme.md",
+      "source_location": "1",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_separated_frontend_backend",
+      "target": "packagejson_boccacafe_inventory_frontend",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "CLAUDE.md",
+      "source_location": "12-13",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_boccacafe_inventory_project",
+      "target": "page_login_page",
+      "relation": "conceptually_related_to",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.2,
+      "source_file": "CLAUDE.md",
+      "source_location": "18",
+      "weight": 1.0
+    },
+    {
+      "source": "playwright_login_page_snapshot",
+      "target": "page_login_page",
+      "relation": "semantically_similar_to",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.25,
+      "source_file": ".playwright-mcp/page-2026-05-24T12-52-47-424Z.yml",
+      "source_location": "2-30",
+      "weight": 1.0
+    },
+    {
+      "source": "playwright_login_page_snapshot",
+      "target": "logincard_login_card",
+      "relation": "semantically_similar_to",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.2,
+      "source_file": ".playwright-mcp/page-2026-05-24T12-52-47-424Z.yml",
+      "source_location": "11-21",
+      "weight": 1.0
+    },
+    {
+      "source": "logincard_login_card",
+      "target": "playwright_login_page_snapshot",
+      "relation": "conceptually_related_to",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.15,
+      "source_file": "Frontend/components/login/LoginCard.tsx",
+      "source_location": "7-12",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "login_route_and_form_flow",
+      "label": "Login route and form submission flow",
+      "nodes": [
+        "page_home_page",
+        "page_login_page",
+        "logincard_login_card",
+        "login_build_login_payload"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/app/page.tsx"
+    },
+    {
+      "id": "bocca_branded_login_experience",
+      "label": "Bocca-branded login page experience",
+      "nodes": [
+        "tailwind_bocca_design_tokens",
+        "page_login_page",
+        "login_page_food_decorations",
+        "logincard_login_card"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Frontend/tailwind.config.ts"
+    },
+    {
+      "id": "frontend_toolchain_stack",
+      "label": "Next.js frontend build toolchain",
+      "nodes": [
+        "packagejson_boccacafe_inventory_frontend",
+        "postcss_tailwind_autoprefixer",
+        "tailwind_bocca_design_tokens",
+        "tsconfig_path_alias_at"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Frontend/package.json"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
