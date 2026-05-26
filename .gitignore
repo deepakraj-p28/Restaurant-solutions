@@ -1,0 +1,12 @@
+Frontend/node_modules/
+Frontend/.next/
+Frontend/out/
+Frontend/dist/
+
+.env
+.env*.local
+
+Frontend/npm-debug.log*
+Frontend/yarn-debug.log*
+Frontend/yarn-error.log*
+Frontend/pnpm-debug.log*
