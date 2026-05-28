@@ -4,6 +4,8 @@ Frontend/out/
 Frontend/dist/
 Frontend/public/assets/References/
 
+.playwright-mcp/
+
 .env
 .env*.local
 

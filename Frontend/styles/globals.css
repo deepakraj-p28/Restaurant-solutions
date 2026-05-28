@@ -15,11 +15,13 @@
 html,
 body {
   min-height: 100%;
+  width: 100%;
   margin: 0;
 }
 
 body {
   font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 button,

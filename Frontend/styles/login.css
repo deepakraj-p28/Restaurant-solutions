@@ -1,7 +1,10 @@
 .login-page {
+  width: 100vw;
+  min-width: 100%;
+  margin: 0;
   background:
-    radial-gradient(circle at 47% 42%, rgba(255, 255, 255, 0.92), transparent 33%),
-    linear-gradient(180deg, #f3f3f1 0%, #ededeb 100%);
+    radial-gradient(circle at 50% 45%, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.72) 38%, transparent 68%),
+    linear-gradient(180deg, #f4f4f2 0%, #f2f2f0 100%);
 }
 
 .bocca-logo {
@@ -23,21 +26,21 @@
   object-fit: contain;
   user-select: none;
   will-change: transform;
-  animation: food-float 6.375s ease-in-out infinite;
+  animation: food-float 4.9s ease-in-out infinite;
 }
 
 .food-float-pizza {
   top: -2.5rem;
   left: -0.75rem;
   width: clamp(11.2rem, 18.4vw, 19.2rem);
-  animation-duration: 7.14s;
+  animation-duration: 5.5s;
 }
 
 .food-float-stack {
   bottom: -5.5rem;
   left: -3.5rem;
   width: clamp(12.5rem, 22vw, 25rem);
-  animation-duration: 6.12s;
+  animation-duration: 4.7s;
   animation-delay: -1.8s;
 }
 
@@ -45,7 +48,7 @@
   top: 22%;
   right: -1.25rem;
   width: clamp(10rem, 18vw, 23rem);
-  animation-duration: 7.565s;
+  animation-duration: 5.8s;
   animation-delay: -3.1s;
 }
 
@@ -136,6 +139,26 @@
 
   50% {
     transform: translate3d(0, 9.9px, 0);
+  }
+}
+
+@media (min-width: 1900px) {
+  .food-float-pizza {
+    top: -3.25rem;
+    left: clamp(-3rem, -2vw, -1rem);
+    width: clamp(23rem, 18vw, 31rem);
+  }
+
+  .food-float-stack {
+    bottom: -7rem;
+    left: clamp(-4rem, -2vw, -1.5rem);
+    width: clamp(31rem, 23vw, 42rem);
+  }
+
+  .food-float-burger {
+    top: 19%;
+    right: clamp(-4rem, -2vw, -1.5rem);
+    width: clamp(30rem, 23vw, 42rem);
   }
 }
 
