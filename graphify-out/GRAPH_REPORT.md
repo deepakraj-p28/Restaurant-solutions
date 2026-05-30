@@ -1,45 +1,59 @@
-# Graph Report - .  (2026-05-26)
+# Graph Report - BoccaCafe-Inventory  (2026-05-29)
 
 ## Corpus Check
-- Corpus is ~42,348 words - fits in a single context window. You may not need a graph.
+- 28 files · ~1,428,626 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 148 nodes · 162 edges · 21 communities (13 shown, 8 thin omitted)
-- Extraction: 81% EXTRACTED · 16% INFERRED · 3% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.82)
+- 256 nodes · 305 edges · 31 communities (19 shown, 12 thin omitted)
+- Extraction: 90% EXTRACTED · 9% INFERRED · 2% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.82)
 - Token cost: 0 input · 0 output
 
+## Graph Freshness
+- Built from commit: `832af8e1`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
+
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_TypeScript Compiler Config|TypeScript Compiler Config]]
-- [[_COMMUNITY_NPM Dependencies|NPM Dependencies]]
-- [[_COMMUNITY_Burger-Right Login Asset|Burger-Right Login Asset]]
-- [[_COMMUNITY_Exploded Burger Stack|Exploded Burger Stack]]
-- [[_COMMUNITY_Login UX & Docs|Login UX & Docs]]
-- [[_COMMUNITY_Pizza Quarter Asset|Pizza Quarter Asset]]
-- [[_COMMUNITY_Login Page Code|Login Page Code]]
-- [[_COMMUNITY_App Icon Branding|App Icon Branding]]
-- [[_COMMUNITY_NPM Scripts|NPM Scripts]]
-- [[_COMMUNITY_Root Layout|Root Layout]]
-- [[_COMMUNITY_Project Architecture|Project Architecture]]
-- [[_COMMUNITY_Login Payload Types|Login Payload Types]]
-- [[_COMMUNITY_ESLint Config|ESLint Config]]
-- [[_COMMUNITY_PostCSS Pipeline|PostCSS Pipeline]]
-- [[_COMMUNITY_Tailwind Design Tokens|Tailwind Design Tokens]]
-- [[_COMMUNITY_Next.js Config|Next.js Config]]
-- [[_COMMUNITY_ESLint Next Rules|ESLint Next Rules]]
-- [[_COMMUNITY_TS Config References|TS Config References]]
-- [[_COMMUNITY_Path Alias|Path Alias]]
+- [[_COMMUNITY_Community 0|Community 0]]
+- [[_COMMUNITY_Community 1|Community 1]]
+- [[_COMMUNITY_Community 2|Community 2]]
+- [[_COMMUNITY_Community 3|Community 3]]
+- [[_COMMUNITY_Community 4|Community 4]]
+- [[_COMMUNITY_Community 5|Community 5]]
+- [[_COMMUNITY_Community 6|Community 6]]
+- [[_COMMUNITY_Community 7|Community 7]]
+- [[_COMMUNITY_Community 8|Community 8]]
+- [[_COMMUNITY_Community 9|Community 9]]
+- [[_COMMUNITY_Community 10|Community 10]]
+- [[_COMMUNITY_Community 11|Community 11]]
+- [[_COMMUNITY_Community 12|Community 12]]
+- [[_COMMUNITY_Community 13|Community 13]]
+- [[_COMMUNITY_Community 14|Community 14]]
+- [[_COMMUNITY_Community 15|Community 15]]
+- [[_COMMUNITY_Community 16|Community 16]]
+- [[_COMMUNITY_Community 18|Community 18]]
+- [[_COMMUNITY_Community 19|Community 19]]
+- [[_COMMUNITY_Community 20|Community 20]]
+- [[_COMMUNITY_Community 21|Community 21]]
+- [[_COMMUNITY_Community 22|Community 22]]
+- [[_COMMUNITY_Community 23|Community 23]]
+- [[_COMMUNITY_Community 24|Community 24]]
+- [[_COMMUNITY_Community 25|Community 25]]
+- [[_COMMUNITY_Community 26|Community 26]]
+- [[_COMMUNITY_Community 27|Community 27]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `compilerOptions` - 17 edges
+1. `compilerOptions` - 18 edges
 2. `Exploded Gourmet Burger (Vertical Stack)` - 14 edges
 3. `Pizza Quarter Slice` - 10 edges
-4. `scripts` - 8 edges
+4. `scripts` - 9 edges
 5. `LoginPage` - 7 edges
 6. `burger-right.png decorative food photograph` - 7 edges
-7. `LoginCard` - 6 edges
-8. `Login page floating food decoration` - 5 edges
-9. `Tomato Slice (Upper)` - 5 edges
-10. `Tomato Slice (Middle)` - 5 edges
+7. `tailwind` - 6 edges
+8. `aliases` - 6 edges
+9. `LoginCard` - 6 edges
+10. `cn()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Playwright accessibility tree of login page` --semantically_similar_to--> `LoginPage`  [AMBIGUOUS] [semantically similar]
@@ -64,51 +78,67 @@
 - **Identifiable Cafe Burger Inventory Ingredients** — burger_stack_top_bun, burger_stack_bottom_bun, burger_stack_lettuce_top, burger_stack_lettuce_bottom, burger_stack_red_onion_top, burger_stack_red_onion_bottom, burger_stack_tomato_top, burger_stack_tomato_middle, burger_stack_tomato_bottom, burger_stack_cheddar_cheese, burger_stack_beef_patty, burger_stack_pickles, burger_stack_sauces [INFERRED 0.75]
 - **Buffalo Chicken Pizza Toppings** — pizza-quarter_melted_cheese, pizza-quarter_buffalo_chicken, pizza-quarter_red_onion, pizza-quarter_jalapeno, pizza-quarter_cilantro, pizza-quarter_red_pepper_flakes [EXTRACTED 1.00]
 
-## Communities (21 total, 8 thin omitted)
+## Communities (31 total, 12 thin omitted)
 
-### Community 0 - "TypeScript Compiler Config"
+### Community 0 - "Community 0"
 Cohesion: 0.10
 Nodes (20): compilerOptions, allowJs, baseUrl, esModuleInterop, incremental, isolatedModules, jsx, lib (+12 more)
 
-### Community 1 - "NPM Dependencies"
-Cohesion: 0.11
-Nodes (17): dependencies, next, react, react-dom, devDependencies, autoprefixer, eslint, eslint-config-next (+9 more)
+### Community 1 - "Community 1"
+Cohesion: 0.07
+Nodes (32): dependencies, class-variance-authority, clsx, lucide-react, next, radix-ui, react, react-dom (+24 more)
 
-### Community 2 - "Burger-Right Login Asset"
+### Community 2 - "Community 2"
 Cohesion: 0.19
 Nodes (16): burger-right.png decorative food photograph, Crispy bacon or chopped tomato bits between patties, Two seared beef patties, Solid black background, Golden bottom bun, Warm food palette (gold bun, red tomato, green lettuce, orange cheese), Double cheeseburger stack, Studio food photography lighting (+8 more)
 
-### Community 3 - "Exploded Burger Stack"
+### Community 3 - "Community 3"
 Cohesion: 0.30
 Nodes (15): Flame-Grilled Beef Patty, Bottom Bun (Toasted), Cheddar Cheese Slice, Exploded Gourmet Burger (Vertical Stack), Curly Leaf Lettuce (Lower Layer), Curly Leaf Lettuce (Upper Layer), Crinkle-Cut Pickle Slices, Exploded Product Photography on Black Background (+7 more)
 
-### Community 4 - "Login UX & Docs"
+### Community 4 - "Community 4"
 Cohesion: 0.15
 Nodes (15): BoccaCafe-Inventory project, Login-focused site metadata, RootLayout, LoginField, loginFields, foodItems floating hero images, rememberField, LoginCard (+7 more)
 
-### Community 5 - "Pizza Quarter Asset"
+### Community 5 - "Community 5"
 Cohesion: 0.20
 Nodes (12): Buffalo-Style Chicken Chunks, Fresh Cilantro Garnish, Golden-Brown Pizza Crust, Pizza Quarter Image Asset, Jalapeño Pepper Slice, Melted Mozzarella Cheese, Pizza Quarter Slice, Sliced Red Onion (+4 more)
 
-### Community 6 - "Login Page Code"
-Cohesion: 0.24
-Nodes (6): foodItems, buildLoginPayload(), LoginField, loginFields, LoginPayload, rememberField
+### Community 6 - "Community 6"
+Cohesion: 0.29
+Nodes (8): LoginCard(), foodItems, LoginPage(), buildLoginPayload(), LoginField, loginFields, LoginPayload, rememberField
 
-### Community 7 - "App Icon Branding"
+### Community 7 - "Community 7"
 Cohesion: 0.25
 Nodes (9): App Icon (icon.svg), Rounded Square Background (#303136), BO Monogram Text, Bocca Cafe Brand Abbreviation (BO), 64×64 Viewport, 18px Corner Radius, Impact / Arial Narrow Typography, Next.js App Router Metadata Icon (+1 more)
 
-### Community 8 - "NPM Scripts"
-Cohesion: 0.25
-Nodes (8): scripts, build, clean, dev, dev:fresh, lint, predev, start
+### Community 8 - "Community 8"
+Cohesion: 0.09
+Nodes (29): buildPipeStyle(), CustomProperties, PipeStyle, viewportKeys, CustomProperties, MapButton(), MapButtonProps, NodeStyle (+21 more)
 
-### Community 10 - "Project Architecture"
+### Community 9 - "Community 9"
+Cohesion: 0.33
+Nodes (6): inter, metadata, RootLayout(), cn(), Button(), buttonVariants
+
+### Community 10 - "Community 10"
 Cohesion: 0.67
 Nodes (3): Separated frontend/backend architecture, Default Next.js configuration, boccacafe-inventory-frontend npm package
 
-### Community 11 - "Login Payload Types"
+### Community 11 - "Community 11"
 Cohesion: 1.00
 Nodes (3): buildLoginPayload, LoginPayload, LoginCard handleSubmit
+
+### Community 21 - "Community 21"
+Cohesion: 0.09
+Nodes (21): aliases, components, hooks, lib, ui, utils, iconLibrary, menuAccent (+13 more)
+
+### Community 22 - "Community 22"
+Cohesion: 0.40
+Nodes (3): Development Status, Project Overview, Repository Structure
+
+### Community 23 - "Community 23"
+Cohesion: 0.50
+Nodes (3): Answer, Q: What is the exact relationship between LoginPage and Playwright accessibility tree of login page?, Source Nodes
 
 ## Ambiguous Edges - Review These
 - `LoginPage` → `BoccaCafe-Inventory project`  [AMBIGUOUS]
@@ -123,9 +153,9 @@ Nodes (3): buildLoginPayload, LoginPayload, LoginCard handleSubmit
   Frontend/public/assets/burger-right.png · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **72 isolated node(s):** `extends`, `nextConfig`, `name`, `version`, `private` (+67 more)
+- **109 isolated node(s):** `PreToolUse`, `$schema`, `plugin`, `@opencode-ai/plugin`, `$schema` (+104 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -140,7 +170,7 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **What is the exact relationship between `Two seared beef patties` and `Crispy bacon or chopped tomato bits between patties`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `scripts` connect `NPM Scripts` to `NPM Dependencies`?**
-  _High betweenness centrality (0.014) - this node is a cross-community bridge._
-- **What connects `extends`, `nextConfig`, `name` to the rest of the system?**
-  _75 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `PreToolUse`, `$schema`, `plugin` to the rest of the system?**
+  _112 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Community 0` be split into smaller, more focused modules?**
+  _Cohesion score 0.09956709956709957 - nodes in this community are weakly interconnected._
