@@ -51,6 +51,9 @@ export default function MapButton({
     }
   }
 
+  const hasImage = !["central-kitchen", "semi-kitchen", "bocca-bakery"].includes(node.id);
+  const imagePath = `/assets/References/${node.label}.png`;
+
   return (
     <div
       className={[
@@ -79,9 +82,15 @@ export default function MapButton({
         onBlur={onDeactivate}
         onKeyDown={handleKeyDown}
       >
-        <span className="home-node-button__outer" aria-hidden="true" />
-        <span className="home-node-button__well" aria-hidden="true">
-          <span className="home-node-button__placeholder" />
+        <span className="home-node-button__halo" aria-hidden="true" />
+        <span className="home-node-button__image-placeholder" aria-hidden="true">
+          {hasImage && (
+            <img 
+              src={imagePath} 
+              alt={node.label} 
+              style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} 
+            />
+          )}
         </span>
       </button>
       <span className="home-node-label">{node.label}</span>

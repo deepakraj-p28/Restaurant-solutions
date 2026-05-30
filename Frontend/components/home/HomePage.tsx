@@ -40,6 +40,7 @@ function buildPipeStyle(connection: HomeConnection): PipeStyle {
 
 export default function HomePage() {
   const [activeNodeId, setActiveNodeId] = useState<NodeId | null>(null);
+  const [activeConnectionId, setActiveConnectionId] = useState<string | null>(null);
 
   const connectedNodeIds = useMemo(() => {
     if (!activeNodeId) {
@@ -49,8 +50,13 @@ export default function HomePage() {
     return new Set(getConnectedNodeIds(activeNodeId));
   }, [activeNodeId]);
 
-  function clearActiveNode() {
+  const hoveredConnection = useMemo(() => {
+    return activeConnectionId ? homeConnections.find(c => c.id === activeConnectionId) : null;
+  }, [activeConnectionId]);
+
+  function clearActiveState() {
     setActiveNodeId(null);
+    setActiveConnectionId(null);
   }
 
   function handlePipeKeyDown(event: KeyboardEvent<HTMLButtonElement>) {
@@ -68,11 +74,19 @@ export default function HomePage() {
       <h1 className="sr-only">BoccaCafe Inventory Home</h1>
 
       <section className="home-graph-shell" aria-label="BoccaCafe inventory node graph">
-        <div className="home-graph-stage" onMouseLeave={clearActiveNode}>
+        <div className="home-graph-stage" onMouseLeave={clearActiveState}>
           <div className="home-pipe-layer" aria-label="Inventory connectors">
             {homeConnections.map((connection) => {
-              const isLinked = activeNodeId ? isConnectionLinkedToNode(connection, activeNodeId) : false;
-              const isDimmed = Boolean(activeNodeId && !isLinked);
+              let isLinked = false;
+              let isDimmed = false;
+
+              if (activeNodeId) {
+                isLinked = isConnectionLinkedToNode(connection, activeNodeId);
+                isDimmed = !isLinked;
+              } else if (activeConnectionId) {
+                isLinked = connection.id === activeConnectionId;
+                isDimmed = !isLinked;
+              }
 
               return (
                 <button
@@ -86,6 +100,10 @@ export default function HomePage() {
                   ].join(" ")}
                   style={buildPipeStyle(connection)}
                   aria-label={`${connection.from.replaceAll("-", " ")} connector to ${connection.to.replaceAll("-", " ")}`}
+                  onMouseEnter={() => setActiveConnectionId(connection.id)}
+                  onMouseLeave={() => setActiveConnectionId(null)}
+                  onFocus={() => setActiveConnectionId(connection.id)}
+                  onBlur={() => setActiveConnectionId(null)}
                   onKeyDown={handlePipeKeyDown}
                 >
                   <span className="home-pipe-button__shadow" aria-hidden="true" />
@@ -97,9 +115,18 @@ export default function HomePage() {
           </div>
 
           {homeNodes.map((node) => {
-            const isActive = activeNodeId === node.id;
-            const isConnected = activeNodeId ? connectedNodeIds.has(node.id) : false;
-            const isDimmed = Boolean(activeNodeId && !isActive && !isConnected);
+            let isActive = false;
+            let isConnected = false;
+            let isDimmed = false;
+
+            if (activeNodeId) {
+              isActive = activeNodeId === node.id;
+              isConnected = connectedNodeIds.has(node.id);
+              isDimmed = !isActive && !isConnected;
+            } else if (hoveredConnection) {
+              isConnected = hoveredConnection.from === node.id || hoveredConnection.to === node.id;
+              isDimmed = !isConnected;
+            }
 
             return (
               <MapButton
@@ -109,7 +136,7 @@ export default function HomePage() {
                 isConnected={isConnected}
                 isDimmed={isDimmed}
                 onActivate={setActiveNodeId}
-                onDeactivate={clearActiveNode}
+                onDeactivate={() => setActiveNodeId(null)}
               />
             );
           })}
