@@ -13,3 +13,7 @@ Frontend/npm-debug.log*
 Frontend/yarn-debug.log*
 Frontend/yarn-error.log*
 Frontend/pnpm-debug.log*
+
+graphify-out/cache/
+graphify-out/cost.json
+graphify-out/manifest.json
