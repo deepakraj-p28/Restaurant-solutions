@@ -3,6 +3,8 @@ Frontend/.next/
 Frontend/out/
 Frontend/dist/
 
+.git/
+
 .env
 .env*.local
 
