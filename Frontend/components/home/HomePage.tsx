@@ -71,6 +71,14 @@ export default function HomePage() {
       <div className="home-page__frost" aria-hidden="true" />
       <div className="home-page__vignette" aria-hidden="true" />
 
+      <a
+        className="bocca-logo absolute left-7 top-7 z-20 text-bocca-blue"
+        href="/login"
+        aria-label="BoccaCafe login"
+      >
+        BOCCA
+      </a>
+
       <h1 className="sr-only">BoccaCafe Inventory Home</h1>
 
       <section className="home-graph-shell" aria-label="BoccaCafe inventory node graph">

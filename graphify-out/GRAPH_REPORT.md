@@ -1,7 +1,7 @@
-# Graph Report - BoccaCafe-Inventory  (2026-05-29)
+# Graph Report - BoccaCafe-Inventory  (2026-05-31)
 
 ## Corpus Check
-- 28 files · ~1,428,626 words
+- 28 files · ~1,429,878 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `832af8e1`
+- Built from commit: `2138b4b5`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

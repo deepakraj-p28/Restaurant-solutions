@@ -52,7 +52,7 @@ export default function MapButton({
   }
 
   const hasImage = !["central-kitchen", "semi-kitchen", "bocca-bakery"].includes(node.id);
-  const imagePath = `/assets/References/${node.label}.png`;
+  const imagePath = `/assets/${node.label}.png`;
 
   return (
     <div

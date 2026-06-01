@@ -125,13 +125,13 @@
     "semantic_hash": ""
   },
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\components\\home\\HomePage.tsx": {
-    "mtime": 1780058764.2198231,
-    "ast_hash": "2d7265344116e9b3b3356caa2da3595b",
+    "mtime": 1780307545.8476026,
+    "ast_hash": "6ff69a5d1a806ad3e969d3e00a51e765",
     "semantic_hash": ""
   },
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\components\\home\\MapButton.tsx": {
-    "mtime": 1780058764.0923004,
-    "ast_hash": "5204e3084eb89a17cdfecf62a9579239",
+    "mtime": 1780170210.7782912,
+    "ast_hash": "4eac2d19033a05f321ad8c8ba251267f",
     "semantic_hash": ""
   },
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\components\\home\\StatusPopup.tsx": {
@@ -150,8 +150,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\scripts\\homepage.ts": {
-    "mtime": 1780058763.750723,
-    "ast_hash": "9a88460bdf846d4c5d66a1480c8d950c",
+    "mtime": 1780306180.9727657,
+    "ast_hash": "e19478f6249f8c359be4d3ab9b908c7f",
     "semantic_hash": ""
   },
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\AGENTS.md": {
@@ -174,39 +174,9 @@
     "ast_hash": "86c8a07c48a0aa150f6028f979c6c3a4",
     "semantic_hash": ""
   },
-  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\References\\Bocca Book Store.png": {
-    "mtime": 1779888054.721913,
-    "ast_hash": "49c6120f7b73796497c26587e7601f5a",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\References\\Bocca Cafe.png": {
-    "mtime": 1779888222.6178071,
-    "ast_hash": "0f25174127c1c61668a0c8c3c9c8f8ce",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\References\\Bocca Kalabhoomi.png": {
-    "mtime": 1779887893.1479175,
-    "ast_hash": "2eb297a5f0880324e8ef99526cfdf50d",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\References\\Bocca Lite.png": {
-    "mtime": 1779887738.6446037,
-    "ast_hash": "bb41131ae79fa90360f99c4c863af5e7",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\References\\Bocca Patia.png": {
-    "mtime": 1779887830.0700884,
-    "ast_hash": "9504ce753647cc3e1aa22446cc3409c4",
-    "semantic_hash": ""
-  },
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\References\\Button design rough.png": {
     "mtime": 1780050240.5300117,
     "ast_hash": "6eb9440fdd2bc47ce34a37b74bb4d2c3",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\References\\Coffee Bean background.jpg": {
-    "mtime": 1780049269.8266854,
-    "ast_hash": "0ff5f1cc0316bb3e9ebfae178033a517",
     "semantic_hash": ""
   },
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\References\\Frosted glass background example.jpg": {
@@ -244,19 +214,49 @@
     "ast_hash": "186ae33cc08a706844382ba504fd8fea",
     "semantic_hash": ""
   },
-  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\References\\Master Canteen.png": {
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\Bocca Book Store.png": {
+    "mtime": 1779888054.721913,
+    "ast_hash": "49c6120f7b73796497c26587e7601f5a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\Bocca Cafe.png": {
+    "mtime": 1779888222.6178071,
+    "ast_hash": "0f25174127c1c61668a0c8c3c9c8f8ce",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\Bocca Kalabhoomi.png": {
+    "mtime": 1779887893.1479175,
+    "ast_hash": "2eb297a5f0880324e8ef99526cfdf50d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\Bocca Lite.png": {
+    "mtime": 1779887738.6446037,
+    "ast_hash": "bb41131ae79fa90360f99c4c863af5e7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\Bocca Patia.png": {
+    "mtime": 1779887830.0700884,
+    "ast_hash": "9504ce753647cc3e1aa22446cc3409c4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\Coffee Bean background.jpg": {
+    "mtime": 1780049269.8266854,
+    "ast_hash": "0ff5f1cc0316bb3e9ebfae178033a517",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\Master Canteen.png": {
     "mtime": 1779887639.6916006,
     "ast_hash": "79e0f2147ea3dfa303ffafc5973076ba",
     "semantic_hash": ""
   },
-  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\References\\Nodes map example.png": {
-    "mtime": 1780051695.335944,
-    "ast_hash": "73acc2ed85eeccdba9201d583031f712",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\References\\Terra Rosso.png": {
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\Terra Rosso.png": {
     "mtime": 1779888002.1834764,
     "ast_hash": "f034bdacbe5a5cc3da11c48d3f8e7e0c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\References\\New Layout.png": {
+    "mtime": 1780084229.1720953,
+    "ast_hash": "bba9a5f988792ef2c8539e8248e6879a",
     "semantic_hash": ""
   }
 }

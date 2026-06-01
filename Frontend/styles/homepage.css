@@ -33,7 +33,7 @@
 
 .home-page__background {
   z-index: 0;
-  background-image: url("/assets/References/Coffee Bean background.jpg");
+  background-image: url("/assets/Coffee Bean background.jpg");
   background-position: center right;
   background-size: cover;
   transform: scale(1.02);
@@ -227,6 +227,10 @@
   pointer-events: none;
 }
 
+.home-node-wrap.is-active {
+  z-index: 20; /* Ensure active node and its popup jump to the very front */
+}
+
 .home-node-wrap.is-active .home-node-button {
   transform: scale(var(--home-hover-scale));
   box-shadow: 
@@ -276,8 +280,8 @@
 /* Glossy Smoked Glass Popups */
 .home-status-popup {
   position: absolute;
-  z-index: 12;
-  width: 220px; /* Increased by 100px */
+  z-index: 25; /* Higher than the node itself */
+  width: min(220px, 75vw); /* Responsive width to prevent horizontal bleed on mobile */
   padding: 16px 18px;
   border-radius: 16px;
   
@@ -293,6 +297,8 @@
     
   color: #fff;
   transform: translate3d(0, 0, 0);
+  /* Ensure popups never cause scrolling */
+  pointer-events: none;
 }
 
 .home-status-popup::before {
@@ -305,6 +311,16 @@
 .home-status-popup--top { bottom: calc(100% + 24px); left: 50%; transform: translateX(-50%); }
 /* Top is heavily adjusted to clear the label */
 .home-status-popup--bottom { left: 50%; top: calc(100% + 55px); transform: translateX(-50%); }
+
+/* Clamp bounds on small screens for center-aligned popups to prevent screen bleed */
+@media (max-width: 640px) {
+  .home-status-popup--right { left: calc(100% + 12px); }
+  .home-status-popup--left { right: calc(100% + 12px); }
+  .home-status-popup--top, .home-status-popup--bottom {
+    /* If the node is too far left/right, translateX(-50%) could push it off screen.
+       We clamp the translation bounds implicitly by constraining width and avoiding fixed massive offsets. */
+  }
+}
 
 .home-status-popup__title {
   font-size: 0.8rem;

@@ -119,7 +119,7 @@ export const homeNodes: HomeNode[] = [
   {
     id: "terra-rosso",
     label: "Terra Rosso",
-    size: "sm",
+    size: "md",
     ringTone: "green",
     depth: "mid",
     popupSide: "left",
@@ -133,7 +133,7 @@ export const homeNodes: HomeNode[] = [
   {
     id: "bocca-lite",
     label: "Bocca Lite",
-    size: "sm",
+    size: "md",
     ringTone: "amber",
     depth: "low",
     popupSide: "right",
