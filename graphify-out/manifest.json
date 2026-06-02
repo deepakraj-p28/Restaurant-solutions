@@ -50,9 +50,9 @@
     "semantic_hash": "74cda691ce4a99a8c07ac33adb891dea"
   },
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\components\\login\\LoginCard.tsx": {
-    "mtime": 1779708640.184026,
-    "ast_hash": "050bba7104614c4a566fbd2dc1fd2617",
-    "semantic_hash": "050bba7104614c4a566fbd2dc1fd2617"
+    "mtime": 1780337409.7977982,
+    "ast_hash": "c31ed1601113b9edf3a545318b8d7b16",
+    "semantic_hash": ""
   },
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\scripts\\login.ts": {
     "mtime": 1779625298.8446484,
@@ -150,8 +150,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\scripts\\homepage.ts": {
-    "mtime": 1780306180.9727657,
-    "ast_hash": "e19478f6249f8c359be4d3ab9b908c7f",
+    "mtime": 1780337624.2341454,
+    "ast_hash": "a04f36106353590e6ddc14b70d7ef4f6",
     "semantic_hash": ""
   },
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\AGENTS.md": {
@@ -257,6 +257,26 @@
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\References\\New Layout.png": {
     "mtime": 1780084229.1720953,
     "ast_hash": "bba9a5f988792ef2c8539e8248e6879a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\app\\main\\page.tsx": {
+    "mtime": 1780343517.4369535,
+    "ast_hash": "bc05d3dcf365a25161ab65290b6f361a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\components\\main\\MainPage.tsx": {
+    "mtime": 1780390757.6596618,
+    "ast_hash": "6edf53cdbdfae9ce329c3df2028f37d4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\References\\Main Page Layout.png": {
+    "mtime": 1780337818.291332,
+    "ast_hash": "d77ec4c98d220550381027f4edaf3321",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\Bocca-Logo.png": {
+    "mtime": 1780390339.2108817,
+    "ast_hash": "9fa484f26e80442ef7b222dea41c4d67",
     "semantic_hash": ""
   }
 }

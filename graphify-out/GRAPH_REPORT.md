@@ -1,16 +1,16 @@
-# Graph Report - BoccaCafe-Inventory  (2026-05-31)
+# Graph Report - BoccaCafe-Inventory  (2026-06-02)
 
 ## Corpus Check
-- 28 files · ~1,429,878 words
+- 30 files · ~1,437,253 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 256 nodes · 305 edges · 31 communities (19 shown, 12 thin omitted)
-- Extraction: 90% EXTRACTED · 9% INFERRED · 2% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.82)
+- 310 nodes · 381 edges · 32 communities (20 shown, 12 thin omitted)
+- Extraction: 92% EXTRACTED · 7% INFERRED · 1% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.82)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `2138b4b5`
+- Built from commit: `798dba73`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -42,18 +42,19 @@
 - [[_COMMUNITY_Community 25|Community 25]]
 - [[_COMMUNITY_Community 26|Community 26]]
 - [[_COMMUNITY_Community 27|Community 27]]
+- [[_COMMUNITY_Community 31|Community 31]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 18 edges
 2. `Exploded Gourmet Burger (Vertical Stack)` - 14 edges
 3. `Pizza Quarter Slice` - 10 edges
 4. `scripts` - 9 edges
-5. `LoginPage` - 7 edges
-6. `burger-right.png decorative food photograph` - 7 edges
-7. `tailwind` - 6 edges
-8. `aliases` - 6 edges
-9. `LoginCard` - 6 edges
-10. `cn()` - 5 edges
+5. `cn()` - 7 edges
+6. `LoginPage` - 7 edges
+7. `burger-right.png decorative food photograph` - 7 edges
+8. `tailwind` - 6 edges
+9. `aliases` - 6 edges
+10. `LoginCard` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Playwright accessibility tree of login page` --semantically_similar_to--> `LoginPage`  [AMBIGUOUS] [semantically similar]
@@ -78,7 +79,7 @@
 - **Identifiable Cafe Burger Inventory Ingredients** — burger_stack_top_bun, burger_stack_bottom_bun, burger_stack_lettuce_top, burger_stack_lettuce_bottom, burger_stack_red_onion_top, burger_stack_red_onion_bottom, burger_stack_tomato_top, burger_stack_tomato_middle, burger_stack_tomato_bottom, burger_stack_cheddar_cheese, burger_stack_beef_patty, burger_stack_pickles, burger_stack_sauces [INFERRED 0.75]
 - **Buffalo Chicken Pizza Toppings** — pizza-quarter_melted_cheese, pizza-quarter_buffalo_chicken, pizza-quarter_red_onion, pizza-quarter_jalapeno, pizza-quarter_cilantro, pizza-quarter_red_pepper_flakes [EXTRACTED 1.00]
 
-## Communities (31 total, 12 thin omitted)
+## Communities (32 total, 12 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.10
@@ -117,8 +118,8 @@ Cohesion: 0.09
 Nodes (29): buildPipeStyle(), CustomProperties, PipeStyle, viewportKeys, CustomProperties, MapButton(), MapButtonProps, NodeStyle (+21 more)
 
 ### Community 9 - "Community 9"
-Cohesion: 0.33
-Nodes (6): inter, metadata, RootLayout(), cn(), Button(), buttonVariants
+Cohesion: 0.29
+Nodes (7): inter, metadata, RootLayout(), cn(), Sidebar(), Button(), buttonVariants
 
 ### Community 10 - "Community 10"
 Cohesion: 0.67
@@ -140,6 +141,10 @@ Nodes (3): Development Status, Project Overview, Repository Structure
 Cohesion: 0.50
 Nodes (3): Answer, Q: What is the exact relationship between LoginPage and Playwright accessibility tree of login page?, Source Nodes
 
+### Community 31 - "Community 31"
+Cohesion: 0.05
+Nodes (43): ActionHint, actionHints, ActivityItem, activityItems, categoryPoints, ChartPoint, dashboardItem, DateRangeId (+35 more)
+
 ## Ambiguous Edges - Review These
 - `LoginPage` → `BoccaCafe-Inventory project`  [AMBIGUOUS]
   CLAUDE.md · relation: conceptually_related_to
@@ -153,7 +158,7 @@ Nodes (3): Answer, Q: What is the exact relationship between LoginPage and Playw
   Frontend/public/assets/burger-right.png · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **109 isolated node(s):** `PreToolUse`, `$schema`, `plugin`, `@opencode-ai/plugin`, `$schema` (+104 more)
+- **131 isolated node(s):** `PreToolUse`, `$schema`, `plugin`, `@opencode-ai/plugin`, `$schema` (+126 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -170,7 +175,7 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **What is the exact relationship between `Two seared beef patties` and `Crispy bacon or chopped tomato bits between patties`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
+- **Why does `cn()` connect `Community 9` to `Community 31`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `PreToolUse`, `$schema`, `plugin` to the rest of the system?**
-  _112 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.09956709956709957 - nodes in this community are weakly interconnected._
+  _134 weakly-connected nodes found - possible documentation gaps or missing edges._

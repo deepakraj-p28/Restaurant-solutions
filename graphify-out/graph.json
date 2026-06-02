@@ -1127,6 +1127,33 @@
       "norm_label": "loginpage()"
     },
     {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "Frontend/app/main/page.tsx",
+      "source_location": "L1",
+      "id": "frontend_app_main_page_tsx",
+      "community": 31,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "Frontend/app/main/page.tsx",
+      "source_location": "L4",
+      "id": "main_page_metadata",
+      "community": 31,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "Page()",
+      "file_type": "code",
+      "source_file": "Frontend/app/main/page.tsx",
+      "source_location": "L9",
+      "id": "main_page_page",
+      "community": 31,
+      "norm_label": "page()"
+    },
+    {
       "label": "HomePage.tsx",
       "file_type": "code",
       "source_file": "Frontend/components/home/HomePage.tsx",
@@ -1265,10 +1292,217 @@
       "label": "LoginCard()",
       "file_type": "code",
       "source_file": "Frontend/components/login/LoginCard.tsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "login_logincard_logincard",
       "community": 6,
       "norm_label": "logincard()"
+    },
+    {
+      "label": "MainPage.tsx",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L1",
+      "id": "frontend_components_main_mainpage_tsx",
+      "community": 31,
+      "norm_label": "mainpage.tsx"
+    },
+    {
+      "label": "MainAppId",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L32",
+      "id": "main_mainpage_mainappid",
+      "community": 31,
+      "norm_label": "mainappid"
+    },
+    {
+      "label": "MainSectionId",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L34",
+      "id": "main_mainpage_mainsectionid",
+      "community": 31,
+      "norm_label": "mainsectionid"
+    },
+    {
+      "label": "NavItem",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L52",
+      "id": "main_mainpage_navitem",
+      "community": 31,
+      "norm_label": "navitem"
+    },
+    {
+      "label": "NavGroup",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L59",
+      "id": "main_mainpage_navgroup",
+      "community": 31,
+      "norm_label": "navgroup"
+    },
+    {
+      "label": "appLabels",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L65",
+      "id": "main_mainpage_applabels",
+      "community": 31,
+      "norm_label": "applabels"
+    },
+    {
+      "label": "sectionDescriptions",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L73",
+      "id": "main_mainpage_sectiondescriptions",
+      "community": 31,
+      "norm_label": "sectiondescriptions"
+    },
+    {
+      "label": "dashboardItem",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L92",
+      "id": "main_mainpage_dashboarditem",
+      "community": 31,
+      "norm_label": "dashboarditem"
+    },
+    {
+      "label": "navGroups",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L99",
+      "id": "main_mainpage_navgroups",
+      "community": 31,
+      "norm_label": "navgroups"
+    },
+    {
+      "label": "sectionLookup",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L147",
+      "id": "main_mainpage_sectionlookup",
+      "community": 31,
+      "norm_label": "sectionlookup"
+    },
+    {
+      "label": "getAppForSection()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L155",
+      "id": "main_mainpage_getappforsection",
+      "community": 31,
+      "norm_label": "getappforsection()"
+    },
+    {
+      "label": "MainPage()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L159",
+      "id": "main_mainpage_mainpage",
+      "community": 31,
+      "norm_label": "mainpage()"
+    },
+    {
+      "label": "TopBar()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L222",
+      "id": "main_mainpage_topbar",
+      "community": 31,
+      "norm_label": "topbar()"
+    },
+    {
+      "label": "SidebarProps",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L256",
+      "id": "main_mainpage_sidebarprops",
+      "community": 31,
+      "norm_label": "sidebarprops"
+    },
+    {
+      "label": "Sidebar()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L264",
+      "id": "main_mainpage_sidebar",
+      "community": 9,
+      "norm_label": "sidebar()"
+    },
+    {
+      "label": "ContentHeaderProps",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L322",
+      "id": "main_mainpage_contentheaderprops",
+      "community": 31,
+      "norm_label": "contentheaderprops"
+    },
+    {
+      "label": "ContentHeader()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L328",
+      "id": "main_mainpage_contentheader",
+      "community": 31,
+      "norm_label": "contentheader()"
+    },
+    {
+      "label": "DashboardGridProps",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L362",
+      "id": "main_mainpage_dashboardgridprops",
+      "community": 31,
+      "norm_label": "dashboardgridprops"
+    },
+    {
+      "label": "DashboardGrid()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L366",
+      "id": "main_mainpage_dashboardgrid",
+      "community": 31,
+      "norm_label": "dashboardgrid()"
+    },
+    {
+      "label": "DataWorkspaceProps",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L379",
+      "id": "main_mainpage_dataworkspaceprops",
+      "community": 31,
+      "norm_label": "dataworkspaceprops"
+    },
+    {
+      "label": "DataWorkspace()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L383",
+      "id": "main_mainpage_dataworkspace",
+      "community": 31,
+      "norm_label": "dataworkspace()"
+    },
+    {
+      "label": "ReviewModalProps",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L419",
+      "id": "main_mainpage_reviewmodalprops",
+      "community": 31,
+      "norm_label": "reviewmodalprops"
+    },
+    {
+      "label": "ReviewModal()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L424",
+      "id": "main_mainpage_reviewmodal",
+      "community": 31,
+      "norm_label": "reviewmodal()"
     },
     {
       "label": "button.tsx",
@@ -1665,6 +1899,258 @@
       "id": "memory_query_20260526_141704_what_is_the_exact_relationship_between_loginpage_a_source_nodes",
       "community": 23,
       "norm_label": "source nodes"
+    },
+    {
+      "label": "main-data.ts",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L1",
+      "community": 31,
+      "norm_label": "main-data.ts",
+      "id": "frontend_components_main_main_data_ts"
+    },
+    {
+      "label": "MainAppId",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L20",
+      "community": 31,
+      "norm_label": "mainappid",
+      "id": "main_main_data_mainappid"
+    },
+    {
+      "label": "MainSectionId",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L22",
+      "community": 31,
+      "norm_label": "mainsectionid",
+      "id": "main_main_data_mainsectionid"
+    },
+    {
+      "label": "DateRangeId",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L37",
+      "community": 31,
+      "norm_label": "daterangeid",
+      "id": "main_main_data_daterangeid"
+    },
+    {
+      "label": "StoreId",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L39",
+      "community": 31,
+      "norm_label": "storeid",
+      "id": "main_main_data_storeid"
+    },
+    {
+      "label": "NavItem",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L41",
+      "community": 31,
+      "norm_label": "navitem",
+      "id": "main_main_data_navitem"
+    },
+    {
+      "label": "NavGroup",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L48",
+      "community": 31,
+      "norm_label": "navgroup",
+      "id": "main_main_data_navgroup"
+    },
+    {
+      "label": "Metric",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L54",
+      "community": 31,
+      "norm_label": "metric",
+      "id": "main_main_data_metric"
+    },
+    {
+      "label": "ChartPoint",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L61",
+      "community": 31,
+      "norm_label": "chartpoint",
+      "id": "main_main_data_chartpoint"
+    },
+    {
+      "label": "InventoryRow",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L66",
+      "community": 31,
+      "norm_label": "inventoryrow",
+      "id": "main_main_data_inventoryrow"
+    },
+    {
+      "label": "ActivityItem",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L77",
+      "community": 31,
+      "norm_label": "activityitem",
+      "id": "main_main_data_activityitem"
+    },
+    {
+      "label": "ActionHint",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L84",
+      "community": 31,
+      "norm_label": "actionhint",
+      "id": "main_main_data_actionhint"
+    },
+    {
+      "label": "stores",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L90",
+      "community": 31,
+      "norm_label": "stores",
+      "id": "main_main_data_stores"
+    },
+    {
+      "label": "dateRanges",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L98",
+      "community": 31,
+      "norm_label": "dateranges",
+      "id": "main_main_data_dateranges"
+    },
+    {
+      "label": "dashboardItem",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L105",
+      "community": 31,
+      "norm_label": "dashboarditem",
+      "id": "main_main_data_dashboarditem"
+    },
+    {
+      "label": "navGroups",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L112",
+      "community": 31,
+      "norm_label": "navgroups",
+      "id": "main_main_data_navgroups"
+    },
+    {
+      "label": "sectionLookup",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L145",
+      "community": 31,
+      "norm_label": "sectionlookup",
+      "id": "main_main_data_sectionlookup"
+    },
+    {
+      "label": "metrics",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L153",
+      "community": 31,
+      "norm_label": "metrics",
+      "id": "main_main_data_metrics"
+    },
+    {
+      "label": "demandPoints",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L160",
+      "community": 31,
+      "norm_label": "demandpoints",
+      "id": "main_main_data_demandpoints"
+    },
+    {
+      "label": "categoryPoints",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L170",
+      "community": 31,
+      "norm_label": "categorypoints",
+      "id": "main_main_data_categorypoints"
+    },
+    {
+      "label": "inventoryRows",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L178",
+      "community": 31,
+      "norm_label": "inventoryrows",
+      "id": "main_main_data_inventoryrows"
+    },
+    {
+      "label": "activityItems",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L199",
+      "community": 31,
+      "norm_label": "activityitems",
+      "id": "main_main_data_activityitems"
+    },
+    {
+      "label": "actionHints",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L206",
+      "community": 31,
+      "norm_label": "actionhints",
+      "id": "main_main_data_actionhints"
+    },
+    {
+      "label": "appDescriptions",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L48",
+      "community": 31,
+      "norm_label": "appdescriptions",
+      "id": "main_mainpage_appdescriptions"
+    },
+    {
+      "label": "getVisibleRows()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L74",
+      "community": 31,
+      "norm_label": "getvisiblerows()",
+      "id": "main_mainpage_getvisiblerows"
+    },
+    {
+      "label": "getLinePoints()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L79",
+      "community": 31,
+      "norm_label": "getlinepoints()",
+      "id": "main_mainpage_getlinepoints"
+    },
+    {
+      "label": "TopBarProps",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L184",
+      "community": 31,
+      "norm_label": "topbarprops",
+      "id": "main_mainpage_topbarprops"
+    },
+    {
+      "label": "activeSectionDescription()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L417",
+      "community": 31,
+      "norm_label": "activesectiondescription()",
+      "id": "main_mainpage_activesectiondescription"
     },
     {
       "label": ".eslintrc.json",
@@ -3936,6 +4422,37 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/main/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_app_main_page_tsx",
+      "target": "frontend_components_main_mainpage_tsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/main/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_app_main_page_tsx",
+      "target": "main_page_metadata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/main/page.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_app_main_page_tsx",
+      "target": "main_page_page"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "Frontend/components/home/HomePage.tsx",
       "source_location": "L5",
       "weight": 1.0,
@@ -4380,6 +4897,540 @@
       "confidence_score": 1.0,
       "source": "components_login_logincard_tsx",
       "target": "login_logincard_logincard"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "frontend_lib_utils_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_mainappid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_mainsectionid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_navitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_navgroup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_applabels"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_sectiondescriptions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_dashboarditem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_navgroups",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_sectionlookup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_getappforsection"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_mainpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L194",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_topbar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L301",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_sidebarprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L309",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_sidebar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L371",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_contentheaderprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L379",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_contentheader"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L422",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_dashboardgridprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L427",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_dashboardgrid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L510",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_dataworkspaceprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L518",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_dataworkspace"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L595",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_reviewmodalprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L600",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_reviewmodal"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "frontend_components_main_main_data_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_main_data_mainappid"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_main_data_mainsectionid"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_main_data_daterangeid"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_main_data_storeid"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_main_data_navitem"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_main_data_inventoryrow"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_main_data_stores"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_main_data_dateranges"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_main_data_dashboarditem"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_main_data_navgroups"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_main_data_sectionlookup"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_main_data_metrics"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_main_data_demandpoints"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_main_data_categorypoints"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_main_data_inventoryrows"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_main_data_activityitems"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_main_data_actionhints"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_appdescriptions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_getvisiblerows"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_getlinepoints"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L184",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_topbarprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L417",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_activesectiondescription"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L99",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_mainpage_mainpage",
+      "target": "main_mainpage_getappforsection"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L418",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_mainpage_activesectiondescription",
+      "target": "main_mainpage_getappforsection"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L314",
+      "weight": 1.0,
+      "source": "main_mainpage_sidebar",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L398",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_mainpage_contentheader",
+      "target": "main_mainpage_activesectiondescription"
     },
     {
       "relation": "imports_from",
@@ -4878,6 +5929,226 @@
       "confidence_score": 1.0,
       "source": "memory_query_20260526_141704_what_is_the_exact_relationship_between_loginpage_a_q_what_is_the_exact_relationship_between_loginpage_and_playwright_accessibility_tree_of_login_page",
       "target": "memory_query_20260526_141704_what_is_the_exact_relationship_between_loginpage_a_source_nodes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_mainappid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_mainsectionid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_daterangeid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_storeid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_navitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_navgroup"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_metric"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_chartpoint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_inventoryrow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_activityitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L84",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_actionhint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L90",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_stores"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L98",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_dateranges"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L105",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_dashboarditem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_navgroups"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L145",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_sectionlookup"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L153",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_metrics"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L160",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_demandpoints"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L170",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_categorypoints"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L178",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_inventoryrows"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L199",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_activityitems"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/main-data.ts",
+      "source_location": "L206",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_main_data_ts",
+      "target": "main_main_data_actionhints"
     },
     {
       "relation": "imports_from",
@@ -6022,5 +7293,5 @@
       "source_file": "Frontend/public/assets/pizza-quarter.png"
     }
   ],
-  "built_at_commit": "2138b4b5066c46e2e7608ebd7113061e9273b7e2"
+  "built_at_commit": "798dba7396f32eefdc2f1234bff3a6da844fd69d"
 }

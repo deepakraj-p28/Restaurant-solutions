@@ -1,15 +1,24 @@
 "use client";
 
 import { type FormEvent, useState } from "react";
+import { useRouter } from "next/navigation";
 import { buildLoginPayload, loginFields, rememberField } from "@/scripts/login";
 
 export default function LoginCard() {
+  const router = useRouter();
   const [status, setStatus] = useState<string>("");
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const payload = buildLoginPayload(event.currentTarget);
-    setStatus(payload.identifier ? "Ready to connect authentication." : "Enter your email or username.");
+
+    if (payload.identifier === "admin" && payload.password === "password") {
+      setStatus("");
+      router.push("/home");
+      return;
+    }
+
+    setStatus("Invalid username or password.");
   }
 
   return (
@@ -58,6 +67,11 @@ export default function LoginCard() {
           Log in
         </button>
 
+        {status ? (
+          <p className="mt-4 text-sm font-semibold text-[#8f2f1f]" role="status" aria-live="polite">
+            {status}
+          </p>
+        ) : null}
       </form>
     </div>
   );

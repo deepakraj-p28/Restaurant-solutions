@@ -62,7 +62,7 @@ export const motionSettings = {
 export const homeNodes: HomeNode[] = [
   {
     id: "central-kitchen",
-    label: "Central Kitchen",
+    label: "Central Store",
     size: "xl",
     ringTone: "green",
     depth: "high",
