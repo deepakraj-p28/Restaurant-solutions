@@ -1355,7 +1355,7 @@
       "label": "CustomProperties",
       "file_type": "code",
       "source_file": "Frontend/components/home/MapButton.tsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "id": "home_mapbutton_customproperties",
       "community": 8,
       "norm_label": "customproperties"
@@ -1364,7 +1364,7 @@
       "label": "NodeStyle",
       "file_type": "code",
       "source_file": "Frontend/components/home/MapButton.tsx",
-      "source_location": "L9",
+      "source_location": "L10",
       "id": "home_mapbutton_nodestyle",
       "community": 8,
       "norm_label": "nodestyle"
@@ -1373,7 +1373,7 @@
       "label": "MapButtonProps",
       "file_type": "code",
       "source_file": "Frontend/components/home/MapButton.tsx",
-      "source_location": "L11",
+      "source_location": "L12",
       "id": "home_mapbutton_mapbuttonprops",
       "community": 8,
       "norm_label": "mapbuttonprops"
@@ -1382,7 +1382,7 @@
       "label": "MapButton()",
       "file_type": "code",
       "source_file": "Frontend/components/home/MapButton.tsx",
-      "source_location": "L20",
+      "source_location": "L21",
       "id": "home_mapbutton_mapbutton",
       "community": 8,
       "norm_label": "mapbutton()"
@@ -9277,5 +9277,5 @@
       "source_file": "Frontend/public/assets/pizza-quarter.png"
     }
   ],
-  "built_at_commit": "61b23dc98fc0bf43b1e7ffd381850c21d0929583"
+  "built_at_commit": "de5f16f9f89b31602ebc5b8e944a0397eb136e53"
 }

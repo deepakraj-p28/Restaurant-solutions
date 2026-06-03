@@ -130,8 +130,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\components\\home\\MapButton.tsx": {
-    "mtime": 1780170210.7782912,
-    "ast_hash": "4eac2d19033a05f321ad8c8ba251267f",
+    "mtime": 1780499505.5960171,
+    "ast_hash": "d14230e53a2cdb79adf933702da851a5",
     "semantic_hash": ""
   },
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\components\\home\\StatusPopup.tsx": {
@@ -292,6 +292,16 @@
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\Central Store.png": {
     "mtime": 1780496773.3918457,
     "ast_hash": "6d04061ef878f5c0c2022a6cd757aa4f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\Bocca Bakery.png": {
+    "mtime": 1780499066.5215752,
+    "ast_hash": "81068b9939e4307941a523fcae82e758",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\Semi Kitchen.png": {
+    "mtime": 1780499147.0065372,
+    "ast_hash": "ddc4e791ec6d3f06cdec973e403e133f",
     "semantic_hash": ""
   }
 }
