@@ -15,8 +15,8 @@
     "semantic_hash": "21958f5752add43cc47ab0ff5172cd46"
   },
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\package.json": {
-    "mtime": 1779876744.04777,
-    "ast_hash": "57dba0ec75af9f9b9a807a7ecd403331",
+    "mtime": 1780488510.2290964,
+    "ast_hash": "98637c94f342b1acbc194e951efff1b1",
     "semantic_hash": ""
   },
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\postcss.config.mjs": {
@@ -265,8 +265,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\components\\main\\MainPage.tsx": {
-    "mtime": 1780390757.6596618,
-    "ast_hash": "6edf53cdbdfae9ce329c3df2028f37d4",
+    "mtime": 1780488660.6023026,
+    "ast_hash": "99be235f4024706a0b068c776cdc238b",
     "semantic_hash": ""
   },
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\References\\Main Page Layout.png": {
@@ -277,6 +277,21 @@
   "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\Bocca-Logo.png": {
     "mtime": 1780390339.2108817,
     "ast_hash": "9fa484f26e80442ef7b222dea41c4d67",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\app\\api\\inventory\\stock\\route.ts": {
+    "mtime": 1780495355.0822732,
+    "ast_hash": "50203154e03c89fb358de62b9530aadd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\components\\main\\StockWorkspace.tsx": {
+    "mtime": 1780498848.607239,
+    "ast_hash": "18ba9ab78434234e7010aad28a7a1b1e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\Deepa\\projects\\BoccaCafe-Inventory\\Frontend\\public\\assets\\Central Store.png": {
+    "mtime": 1780496773.3918457,
+    "ast_hash": "6d04061ef878f5c0c2022a6cd757aa4f",
     "semantic_hash": ""
   }
 }

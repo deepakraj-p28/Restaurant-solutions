@@ -704,10 +704,19 @@
       "norm_label": "tw-animate-css"
     },
     {
+      "label": "xlsx",
+      "file_type": "code",
+      "source_file": "Frontend/package.json",
+      "source_location": "L25",
+      "id": "frontend_package_dependencies_xlsx",
+      "community": 1,
+      "norm_label": "xlsx"
+    },
+    {
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "Frontend/package.json",
-      "source_location": "L26",
+      "source_location": "L27",
       "id": "frontend_package_devdependencies",
       "community": 1,
       "norm_label": "devdependencies"
@@ -716,7 +725,7 @@
       "label": "@types/node",
       "file_type": "code",
       "source_file": "Frontend/package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "id": "frontend_package_devdependencies_types_node",
       "community": 1,
       "norm_label": "@types/node"
@@ -725,7 +734,7 @@
       "label": "@types/react",
       "file_type": "code",
       "source_file": "Frontend/package.json",
-      "source_location": "L28",
+      "source_location": "L29",
       "id": "frontend_package_devdependencies_types_react",
       "community": 1,
       "norm_label": "@types/react"
@@ -734,7 +743,7 @@
       "label": "@types/react-dom",
       "file_type": "code",
       "source_file": "Frontend/package.json",
-      "source_location": "L29",
+      "source_location": "L30",
       "id": "frontend_package_devdependencies_types_react_dom",
       "community": 1,
       "norm_label": "@types/react-dom"
@@ -743,7 +752,7 @@
       "label": "autoprefixer",
       "file_type": "code",
       "source_file": "Frontend/package.json",
-      "source_location": "L30",
+      "source_location": "L31",
       "id": "frontend_package_devdependencies_autoprefixer",
       "community": 1,
       "norm_label": "autoprefixer"
@@ -752,7 +761,7 @@
       "label": "eslint",
       "file_type": "code",
       "source_file": "Frontend/package.json",
-      "source_location": "L31",
+      "source_location": "L32",
       "id": "frontend_package_devdependencies_eslint",
       "community": 1,
       "norm_label": "eslint"
@@ -761,7 +770,7 @@
       "label": "eslint-config-next",
       "file_type": "code",
       "source_file": "Frontend/package.json",
-      "source_location": "L32",
+      "source_location": "L33",
       "id": "frontend_package_devdependencies_eslint_config_next",
       "community": 1,
       "norm_label": "eslint-config-next"
@@ -770,7 +779,7 @@
       "label": "postcss",
       "file_type": "code",
       "source_file": "Frontend/package.json",
-      "source_location": "L33",
+      "source_location": "L34",
       "id": "frontend_package_devdependencies_postcss",
       "community": 1,
       "norm_label": "postcss"
@@ -779,7 +788,7 @@
       "label": "tailwindcss",
       "file_type": "code",
       "source_file": "Frontend/package.json",
-      "source_location": "L34",
+      "source_location": "L35",
       "id": "frontend_package_devdependencies_tailwindcss",
       "community": 1,
       "norm_label": "tailwindcss"
@@ -788,7 +797,7 @@
       "label": "typescript",
       "file_type": "code",
       "source_file": "Frontend/package.json",
-      "source_location": "L35",
+      "source_location": "L36",
       "id": "frontend_package_devdependencies_typescript",
       "community": 1,
       "norm_label": "typescript"
@@ -1033,7 +1042,7 @@
       "source_file": "Frontend/app/layout.tsx",
       "source_location": "L1",
       "id": "frontend_app_layout_tsx",
-      "community": 9,
+      "community": 37,
       "norm_label": "layout.tsx"
     },
     {
@@ -1042,7 +1051,7 @@
       "source_file": "Frontend/app/layout.tsx",
       "source_location": "L7",
       "id": "app_layout_inter",
-      "community": 9,
+      "community": 37,
       "norm_label": "inter"
     },
     {
@@ -1051,7 +1060,7 @@
       "source_file": "Frontend/app/layout.tsx",
       "source_location": "L9",
       "id": "app_layout_metadata",
-      "community": 9,
+      "community": 37,
       "norm_label": "metadata"
     },
     {
@@ -1060,7 +1069,7 @@
       "source_file": "Frontend/app/layout.tsx",
       "source_location": "L14",
       "id": "app_layout_rootlayout",
-      "community": 9,
+      "community": 37,
       "norm_label": "rootlayout()"
     },
     {
@@ -1080,6 +1089,132 @@
       "id": "app_page_homepage",
       "community": 12,
       "norm_label": "homepage()"
+    },
+    {
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L1",
+      "id": "frontend_app_api_inventory_stock_route_ts",
+      "community": 36,
+      "norm_label": "route.ts"
+    },
+    {
+      "label": "RawInventoryRow",
+      "file_type": "code",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L9",
+      "id": "stock_route_rawinventoryrow",
+      "community": 36,
+      "norm_label": "rawinventoryrow"
+    },
+    {
+      "label": "InventoryRow",
+      "file_type": "code",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L11",
+      "id": "stock_route_inventoryrow",
+      "community": 36,
+      "norm_label": "inventoryrow"
+    },
+    {
+      "label": "textValue()",
+      "file_type": "code",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L25",
+      "id": "stock_route_textvalue",
+      "community": 36,
+      "norm_label": "textvalue()"
+    },
+    {
+      "label": "numericValue()",
+      "file_type": "code",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L33",
+      "id": "stock_route_numericvalue",
+      "community": 36,
+      "norm_label": "numericvalue()"
+    },
+    {
+      "label": "formatLocalDate()",
+      "file_type": "code",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L43",
+      "id": "stock_route_formatlocaldate",
+      "community": 36,
+      "norm_label": "formatlocaldate()"
+    },
+    {
+      "label": "dateWithOffset()",
+      "file_type": "code",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L50",
+      "id": "stock_route_datewithoffset",
+      "community": 36,
+      "norm_label": "datewithoffset()"
+    },
+    {
+      "label": "excelDateValue()",
+      "file_type": "code",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L57",
+      "id": "stock_route_exceldatevalue",
+      "community": 36,
+      "norm_label": "exceldatevalue()"
+    },
+    {
+      "label": "normalizeRow()",
+      "file_type": "code",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L82",
+      "id": "stock_route_normalizerow",
+      "community": 36,
+      "norm_label": "normalizerow()"
+    },
+    {
+      "label": "rowMatchesLockedStore()",
+      "file_type": "code",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L99",
+      "id": "stock_route_rowmatcheslockedstore",
+      "community": 36,
+      "norm_label": "rowmatcheslockedstore()"
+    },
+    {
+      "label": "uniqueValues()",
+      "file_type": "code",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L104",
+      "id": "stock_route_uniquevalues",
+      "community": 36,
+      "norm_label": "uniquevalues()"
+    },
+    {
+      "label": "formatNumber()",
+      "file_type": "code",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L108",
+      "id": "stock_route_formatnumber",
+      "community": 36,
+      "norm_label": "formatnumber()"
+    },
+    {
+      "label": "buildWeeklyConsumption()",
+      "file_type": "code",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L112",
+      "id": "stock_route_buildweeklyconsumption",
+      "community": 36,
+      "norm_label": "buildweeklyconsumption()"
+    },
+    {
+      "label": "GET()",
+      "file_type": "code",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L129",
+      "id": "stock_route_get",
+      "community": 36,
+      "norm_label": "get()"
     },
     {
       "label": "page.tsx",
@@ -1132,7 +1267,7 @@
       "source_file": "Frontend/app/main/page.tsx",
       "source_location": "L1",
       "id": "frontend_app_main_page_tsx",
-      "community": 31,
+      "community": 34,
       "norm_label": "page.tsx"
     },
     {
@@ -1141,7 +1276,7 @@
       "source_file": "Frontend/app/main/page.tsx",
       "source_location": "L4",
       "id": "main_page_metadata",
-      "community": 31,
+      "community": 34,
       "norm_label": "metadata"
     },
     {
@@ -1150,7 +1285,7 @@
       "source_file": "Frontend/app/main/page.tsx",
       "source_location": "L9",
       "id": "main_page_page",
-      "community": 31,
+      "community": 34,
       "norm_label": "page()"
     },
     {
@@ -1303,206 +1438,782 @@
       "source_file": "Frontend/components/main/MainPage.tsx",
       "source_location": "L1",
       "id": "frontend_components_main_mainpage_tsx",
-      "community": 31,
+      "community": 32,
       "norm_label": "mainpage.tsx"
     },
     {
       "label": "MainAppId",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L32",
+      "source_location": "L37",
       "id": "main_mainpage_mainappid",
-      "community": 31,
+      "community": 32,
       "norm_label": "mainappid"
     },
     {
       "label": "MainSectionId",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L34",
+      "source_location": "L39",
       "id": "main_mainpage_mainsectionid",
-      "community": 31,
+      "community": 32,
       "norm_label": "mainsectionid"
     },
     {
       "label": "NavItem",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L52",
+      "source_location": "L57",
       "id": "main_mainpage_navitem",
-      "community": 31,
+      "community": 32,
       "norm_label": "navitem"
     },
     {
       "label": "NavGroup",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L59",
+      "source_location": "L64",
       "id": "main_mainpage_navgroup",
-      "community": 31,
+      "community": 32,
       "norm_label": "navgroup"
+    },
+    {
+      "label": "DateRangeId",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L70",
+      "id": "main_mainpage_daterangeid",
+      "community": 32,
+      "norm_label": "daterangeid"
     },
     {
       "label": "appLabels",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L65",
+      "source_location": "L72",
       "id": "main_mainpage_applabels",
-      "community": 31,
+      "community": 32,
       "norm_label": "applabels"
     },
     {
       "label": "sectionDescriptions",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L73",
+      "source_location": "L80",
       "id": "main_mainpage_sectiondescriptions",
-      "community": 31,
+      "community": 32,
       "norm_label": "sectiondescriptions"
     },
     {
       "label": "dashboardItem",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L92",
+      "source_location": "L99",
       "id": "main_mainpage_dashboarditem",
-      "community": 31,
+      "community": 32,
       "norm_label": "dashboarditem"
+    },
+    {
+      "label": "storeOptions",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L108",
+      "id": "main_mainpage_storeoptions",
+      "community": 32,
+      "norm_label": "storeoptions"
+    },
+    {
+      "label": "dateRanges",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L121",
+      "id": "main_mainpage_dateranges",
+      "community": 32,
+      "norm_label": "dateranges"
     },
     {
       "label": "navGroups",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L99",
+      "source_location": "L128",
       "id": "main_mainpage_navgroups",
-      "community": 31,
+      "community": 32,
       "norm_label": "navgroups"
     },
     {
       "label": "sectionLookup",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L147",
+      "source_location": "L176",
       "id": "main_mainpage_sectionlookup",
-      "community": 31,
+      "community": 32,
       "norm_label": "sectionlookup"
     },
     {
       "label": "getAppForSection()",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L155",
+      "source_location": "L184",
       "id": "main_mainpage_getappforsection",
-      "community": 31,
+      "community": 33,
       "norm_label": "getappforsection()"
     },
     {
       "label": "MainPage()",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L159",
+      "source_location": "L188",
       "id": "main_mainpage_mainpage",
-      "community": 31,
+      "community": 33,
       "norm_label": "mainpage()"
+    },
+    {
+      "label": "TopBarProps",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L258",
+      "id": "main_mainpage_topbarprops",
+      "community": 32,
+      "norm_label": "topbarprops"
+    },
+    {
+      "label": "formatShortDate()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L263",
+      "id": "main_mainpage_formatshortdate",
+      "community": 35,
+      "norm_label": "formatshortdate()"
+    },
+    {
+      "label": "getDateDaysAgo()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L267",
+      "id": "main_mainpage_getdatedaysago",
+      "community": 35,
+      "norm_label": "getdatedaysago()"
+    },
+    {
+      "label": "parseDateInput()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L274",
+      "id": "main_mainpage_parsedateinput",
+      "community": 35,
+      "norm_label": "parsedateinput()"
+    },
+    {
+      "label": "formatDateRangeLabel()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L282",
+      "id": "main_mainpage_formatdaterangelabel",
+      "community": 35,
+      "norm_label": "formatdaterangelabel()"
+    },
+    {
+      "label": "getDateRangeLabel()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L286",
+      "id": "main_mainpage_getdaterangelabel",
+      "community": 35,
+      "norm_label": "getdaterangelabel()"
     },
     {
       "label": "TopBar()",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L222",
+      "source_location": "L309",
       "id": "main_mainpage_topbar",
-      "community": 31,
+      "community": 35,
       "norm_label": "topbar()"
     },
     {
       "label": "SidebarProps",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L256",
+      "source_location": "L486",
       "id": "main_mainpage_sidebarprops",
-      "community": 31,
+      "community": 32,
       "norm_label": "sidebarprops"
     },
     {
       "label": "Sidebar()",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L264",
+      "source_location": "L494",
       "id": "main_mainpage_sidebar",
-      "community": 9,
+      "community": 37,
       "norm_label": "sidebar()"
     },
     {
       "label": "ContentHeaderProps",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L322",
+      "source_location": "L554",
       "id": "main_mainpage_contentheaderprops",
-      "community": 31,
+      "community": 32,
       "norm_label": "contentheaderprops"
     },
     {
       "label": "ContentHeader()",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L328",
+      "source_location": "L560",
       "id": "main_mainpage_contentheader",
-      "community": 31,
+      "community": 33,
       "norm_label": "contentheader()"
     },
     {
       "label": "DashboardGridProps",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L362",
+      "source_location": "L594",
       "id": "main_mainpage_dashboardgridprops",
-      "community": 31,
+      "community": 32,
       "norm_label": "dashboardgridprops"
     },
     {
       "label": "DashboardGrid()",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L366",
+      "source_location": "L598",
       "id": "main_mainpage_dashboardgrid",
-      "community": 31,
+      "community": 32,
       "norm_label": "dashboardgrid()"
     },
     {
       "label": "DataWorkspaceProps",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L379",
+      "source_location": "L611",
       "id": "main_mainpage_dataworkspaceprops",
-      "community": 31,
+      "community": 32,
       "norm_label": "dataworkspaceprops"
     },
     {
       "label": "DataWorkspace()",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L383",
+      "source_location": "L615",
       "id": "main_mainpage_dataworkspace",
-      "community": 31,
+      "community": 32,
       "norm_label": "dataworkspace()"
     },
     {
       "label": "ReviewModalProps",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L419",
+      "source_location": "L651",
       "id": "main_mainpage_reviewmodalprops",
-      "community": 31,
+      "community": 32,
       "norm_label": "reviewmodalprops"
     },
     {
       "label": "ReviewModal()",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L424",
+      "source_location": "L656",
       "id": "main_mainpage_reviewmodal",
-      "community": 31,
+      "community": 32,
       "norm_label": "reviewmodal()"
+    },
+    {
+      "label": "StockWorkspace.tsx",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L1",
+      "id": "frontend_components_main_stockworkspace_tsx",
+      "community": 9,
+      "norm_label": "stockworkspace.tsx"
+    },
+    {
+      "label": "StockRow",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L21",
+      "id": "main_stockworkspace_stockrow",
+      "community": 9,
+      "norm_label": "stockrow"
+    },
+    {
+      "label": "ChartPoint",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L33",
+      "id": "main_stockworkspace_chartpoint",
+      "community": 9,
+      "norm_label": "chartpoint"
+    },
+    {
+      "label": "WeeklyConsumptionPoint",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L40",
+      "id": "main_stockworkspace_weeklyconsumptionpoint",
+      "community": 9,
+      "norm_label": "weeklyconsumptionpoint"
+    },
+    {
+      "label": "StockApiResponse",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L46",
+      "id": "main_stockworkspace_stockapiresponse",
+      "community": 9,
+      "norm_label": "stockapiresponse"
+    },
+    {
+      "label": "FilterColumnId",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L63",
+      "id": "main_stockworkspace_filtercolumnid",
+      "community": 9,
+      "norm_label": "filtercolumnid"
+    },
+    {
+      "label": "ComparisonOperator",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L64",
+      "id": "main_stockworkspace_comparisonoperator",
+      "community": 9,
+      "norm_label": "comparisonoperator"
+    },
+    {
+      "label": "ExpiryPreset",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L65",
+      "id": "main_stockworkspace_expirypreset",
+      "community": 9,
+      "norm_label": "expirypreset"
+    },
+    {
+      "label": "SelectedFilter",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L67",
+      "id": "main_stockworkspace_selectedfilter",
+      "community": 9,
+      "norm_label": "selectedfilter"
+    },
+    {
+      "label": "FilterDraft",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L75",
+      "id": "main_stockworkspace_filterdraft",
+      "community": 9,
+      "norm_label": "filterdraft"
+    },
+    {
+      "label": "SelectOption",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L83",
+      "id": "main_stockworkspace_selectoption",
+      "community": 9,
+      "norm_label": "selectoption"
+    },
+    {
+      "label": "TableColumn",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L88",
+      "id": "main_stockworkspace_tablecolumn",
+      "community": 9,
+      "norm_label": "tablecolumn"
+    },
+    {
+      "label": "chartColors",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L96",
+      "id": "main_stockworkspace_chartcolors",
+      "community": 9,
+      "norm_label": "chartcolors"
+    },
+    {
+      "label": "healthChartColors",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L97",
+      "id": "main_stockworkspace_healthchartcolors",
+      "community": 9,
+      "norm_label": "healthchartcolors"
+    },
+    {
+      "label": "comparisonLabels",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L103",
+      "id": "main_stockworkspace_comparisonlabels",
+      "community": 9,
+      "norm_label": "comparisonlabels"
+    },
+    {
+      "label": "expiryPresetLabels",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L108",
+      "id": "main_stockworkspace_expirypresetlabels",
+      "community": 9,
+      "norm_label": "expirypresetlabels"
+    },
+    {
+      "label": "comparisonOptions",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L113",
+      "id": "main_stockworkspace_comparisonoptions",
+      "community": 9,
+      "norm_label": "comparisonoptions"
+    },
+    {
+      "label": "numberFormatter",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L116",
+      "id": "main_stockworkspace_numberformatter",
+      "community": 9,
+      "norm_label": "numberformatter"
+    },
+    {
+      "label": "currencyFormatter",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L117",
+      "id": "main_stockworkspace_currencyformatter",
+      "community": 9,
+      "norm_label": "currencyformatter"
+    },
+    {
+      "label": "formatNumber()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L123",
+      "id": "main_stockworkspace_formatnumber",
+      "community": 38,
+      "norm_label": "formatnumber()"
+    },
+    {
+      "label": "formatCurrency()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L127",
+      "id": "main_stockworkspace_formatcurrency",
+      "community": 38,
+      "norm_label": "formatcurrency()"
+    },
+    {
+      "label": "formatQuantity()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L131",
+      "id": "main_stockworkspace_formatquantity",
+      "community": 38,
+      "norm_label": "formatquantity()"
+    },
+    {
+      "label": "formatDate()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L135",
+      "id": "main_stockworkspace_formatdate",
+      "community": 40,
+      "norm_label": "formatdate()"
+    },
+    {
+      "label": "formatDateControlLabel()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L148",
+      "id": "main_stockworkspace_formatdatecontrollabel",
+      "community": 40,
+      "norm_label": "formatdatecontrollabel()"
+    },
+    {
+      "label": "toDateInputValue()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L152",
+      "id": "main_stockworkspace_todateinputvalue",
+      "community": 9,
+      "norm_label": "todateinputvalue()"
+    },
+    {
+      "label": "getCalendarDays()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L159",
+      "id": "main_stockworkspace_getcalendardays",
+      "community": 40,
+      "norm_label": "getcalendardays()"
+    },
+    {
+      "label": "getMonthLabel()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L171",
+      "id": "main_stockworkspace_getmonthlabel",
+      "community": 40,
+      "norm_label": "getmonthlabel()"
+    },
+    {
+      "label": "isSameDay()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L175",
+      "id": "main_stockworkspace_issameday",
+      "community": 9,
+      "norm_label": "issameday()"
+    },
+    {
+      "label": "tableColumns",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L179",
+      "id": "main_stockworkspace_tablecolumns",
+      "community": 9,
+      "norm_label": "tablecolumns"
+    },
+    {
+      "label": "defaultFilterDraft()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L189",
+      "id": "main_stockworkspace_defaultfilterdraft",
+      "community": 9,
+      "norm_label": "defaultfilterdraft()"
+    },
+    {
+      "label": "draftFromFilter()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L199",
+      "id": "main_stockworkspace_draftfromfilter",
+      "community": 9,
+      "norm_label": "draftfromfilter()"
+    },
+    {
+      "label": "compareNumbers()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L225",
+      "id": "main_stockworkspace_comparenumbers",
+      "community": 39,
+      "norm_label": "comparenumbers()"
+    },
+    {
+      "label": "parseLocalDate()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L237",
+      "id": "main_stockworkspace_parselocaldate",
+      "community": 39,
+      "norm_label": "parselocaldate()"
+    },
+    {
+      "label": "addDays()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L251",
+      "id": "main_stockworkspace_adddays",
+      "community": 39,
+      "norm_label": "adddays()"
+    },
+    {
+      "label": "dateMatchesPreset()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L257",
+      "id": "main_stockworkspace_datematchespreset",
+      "community": 39,
+      "norm_label": "datematchespreset()"
+    },
+    {
+      "label": "rowMatchesFilter()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L272",
+      "id": "main_stockworkspace_rowmatchesfilter",
+      "community": 39,
+      "norm_label": "rowmatchesfilter()"
+    },
+    {
+      "label": "getFilteredRows()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L307",
+      "id": "main_stockworkspace_getfilteredrows",
+      "community": 9,
+      "norm_label": "getfilteredrows()"
+    },
+    {
+      "label": "getChartColor()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L316",
+      "id": "main_stockworkspace_getchartcolor",
+      "community": 9,
+      "norm_label": "getchartcolor()"
+    },
+    {
+      "label": "clampPage()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L320",
+      "id": "main_stockworkspace_clamppage",
+      "community": 9,
+      "norm_label": "clamppage()"
+    },
+    {
+      "label": "StockWorkspace()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L328",
+      "id": "main_stockworkspace_stockworkspace",
+      "community": 38,
+      "norm_label": "stockworkspace()"
+    },
+    {
+      "label": "FilterMenuProps",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L778",
+      "id": "main_stockworkspace_filtermenuprops",
+      "community": 9,
+      "norm_label": "filtermenuprops"
+    },
+    {
+      "label": "FilterMenu()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L796",
+      "id": "main_stockworkspace_filtermenu",
+      "community": 37,
+      "norm_label": "filtermenu()"
+    },
+    {
+      "label": "ComparisonControlsProps",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L928",
+      "id": "main_stockworkspace_comparisoncontrolsprops",
+      "community": 9,
+      "norm_label": "comparisoncontrolsprops"
+    },
+    {
+      "label": "ComparisonControls()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L936",
+      "id": "main_stockworkspace_comparisoncontrols",
+      "community": 9,
+      "norm_label": "comparisoncontrols()"
+    },
+    {
+      "label": "InventorySelectProps",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L968",
+      "id": "main_stockworkspace_inventoryselectprops",
+      "community": 9,
+      "norm_label": "inventoryselectprops"
+    },
+    {
+      "label": "InventorySelect()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L975",
+      "id": "main_stockworkspace_inventoryselect",
+      "community": 37,
+      "norm_label": "inventoryselect()"
+    },
+    {
+      "label": "InventoryDatePickerProps",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L1022",
+      "id": "main_stockworkspace_inventorydatepickerprops",
+      "community": 9,
+      "norm_label": "inventorydatepickerprops"
+    },
+    {
+      "label": "InventoryDatePicker()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L1027",
+      "id": "main_stockworkspace_inventorydatepicker",
+      "community": 40,
+      "norm_label": "inventorydatepicker()"
+    },
+    {
+      "label": "InventoryPaginationProps",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L1111",
+      "id": "main_stockworkspace_inventorypaginationprops",
+      "community": 9,
+      "norm_label": "inventorypaginationprops"
+    },
+    {
+      "label": "InventoryPagination()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L1119",
+      "id": "main_stockworkspace_inventorypagination",
+      "community": 37,
+      "norm_label": "inventorypagination()"
+    },
+    {
+      "label": "StatusCardProps",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L1176",
+      "id": "main_stockworkspace_statuscardprops",
+      "community": 9,
+      "norm_label": "statuscardprops"
+    },
+    {
+      "label": "StatusCard()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L1182",
+      "id": "main_stockworkspace_statuscard",
+      "community": 9,
+      "norm_label": "statuscard()"
+    },
+    {
+      "label": "PieChartVariant",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L1196",
+      "id": "main_stockworkspace_piechartvariant",
+      "community": 9,
+      "norm_label": "piechartvariant"
+    },
+    {
+      "label": "PieChartProps",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L1198",
+      "id": "main_stockworkspace_piechartprops",
+      "community": 9,
+      "norm_label": "piechartprops"
+    },
+    {
+      "label": "PieChart()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L1204",
+      "id": "main_stockworkspace_piechart",
+      "community": 38,
+      "norm_label": "piechart()"
     },
     {
       "label": "button.tsx",
@@ -1510,7 +2221,7 @@
       "source_file": "Frontend/components/ui/button.tsx",
       "source_location": "L1",
       "id": "frontend_components_ui_button_tsx",
-      "community": 9,
+      "community": 37,
       "norm_label": "button.tsx"
     },
     {
@@ -1519,7 +2230,7 @@
       "source_file": "Frontend/components/ui/button.tsx",
       "source_location": "L7",
       "id": "ui_button_buttonvariants",
-      "community": 9,
+      "community": 37,
       "norm_label": "buttonvariants"
     },
     {
@@ -1528,7 +2239,7 @@
       "source_file": "Frontend/components/ui/button.tsx",
       "source_location": "L44",
       "id": "ui_button_button",
-      "community": 9,
+      "community": 37,
       "norm_label": "button()"
     },
     {
@@ -1537,7 +2248,7 @@
       "source_file": "Frontend/lib/utils.ts",
       "source_location": "L1",
       "id": "frontend_lib_utils_ts",
-      "community": 9,
+      "community": 37,
       "norm_label": "utils.ts"
     },
     {
@@ -1546,7 +2257,7 @@
       "source_file": "Frontend/lib/utils.ts",
       "source_location": "L4",
       "id": "lib_utils_cn",
-      "community": 9,
+      "community": 37,
       "norm_label": "cn()"
     },
     {
@@ -1901,6 +2612,24 @@
       "norm_label": "source nodes"
     },
     {
+      "label": "formatQuantities()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L140",
+      "community": 38,
+      "norm_label": "formatquantities()",
+      "id": "main_stockworkspace_formatquantities"
+    },
+    {
+      "label": "buildConicGradient()",
+      "file_type": "code",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L112",
+      "community": 38,
+      "norm_label": "buildconicgradient()",
+      "id": "main_stockworkspace_buildconicgradient"
+    },
+    {
       "label": "main-data.ts",
       "file_type": "code",
       "source_file": "Frontend/components/main/main-data.ts",
@@ -2112,7 +2841,7 @@
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
       "source_location": "L48",
-      "community": 31,
+      "community": 32,
       "norm_label": "appdescriptions",
       "id": "main_mainpage_appdescriptions"
     },
@@ -2121,7 +2850,7 @@
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
       "source_location": "L74",
-      "community": 31,
+      "community": 32,
       "norm_label": "getvisiblerows()",
       "id": "main_mainpage_getvisiblerows"
     },
@@ -2130,25 +2859,16 @@
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
       "source_location": "L79",
-      "community": 31,
+      "community": 32,
       "norm_label": "getlinepoints()",
       "id": "main_mainpage_getlinepoints"
-    },
-    {
-      "label": "TopBarProps",
-      "file_type": "code",
-      "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L184",
-      "community": 31,
-      "norm_label": "topbarprops",
-      "id": "main_mainpage_topbarprops"
     },
     {
       "label": "activeSectionDescription()",
       "file_type": "code",
       "source_file": "Frontend/components/main/MainPage.tsx",
       "source_location": "L417",
-      "community": 31,
+      "community": 33,
       "norm_label": "activesectiondescription()",
       "id": "main_mainpage_activesectiondescription"
     },
@@ -2220,7 +2940,7 @@
       "file_type": "code",
       "source_file": "app/layout.tsx",
       "source_location": "L1",
-      "community": 9,
+      "community": 37,
       "norm_label": "layout.tsx",
       "id": "app_layout_tsx"
     },
@@ -3856,6 +4576,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "Frontend/package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_xlsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "package.json",
       "source_location": "L14",
       "weight": 1.0,
@@ -4345,6 +5075,257 @@
       "confidence_score": 1.0,
       "source": "app_page_tsx",
       "target": "app_page_homepage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_app_api_inventory_stock_route_ts",
+      "target": "stock_route_rawinventoryrow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_app_api_inventory_stock_route_ts",
+      "target": "stock_route_inventoryrow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_app_api_inventory_stock_route_ts",
+      "target": "stock_route_textvalue"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_app_api_inventory_stock_route_ts",
+      "target": "stock_route_numericvalue"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_app_api_inventory_stock_route_ts",
+      "target": "stock_route_formatlocaldate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_app_api_inventory_stock_route_ts",
+      "target": "stock_route_datewithoffset"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_app_api_inventory_stock_route_ts",
+      "target": "stock_route_exceldatevalue"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L82",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_app_api_inventory_stock_route_ts",
+      "target": "stock_route_normalizerow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L96",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_app_api_inventory_stock_route_ts",
+      "target": "stock_route_rowmatcheslockedstore"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L101",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_app_api_inventory_stock_route_ts",
+      "target": "stock_route_uniquevalues"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L105",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_app_api_inventory_stock_route_ts",
+      "target": "stock_route_formatnumber"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L109",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_app_api_inventory_stock_route_ts",
+      "target": "stock_route_buildweeklyconsumption"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L126",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_app_api_inventory_stock_route_ts",
+      "target": "stock_route_get"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "stock_route_numericvalue",
+      "target": "stock_route_textvalue"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "stock_route_exceldatevalue",
+      "target": "stock_route_textvalue"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L84",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "stock_route_normalizerow",
+      "target": "stock_route_textvalue"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L97",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "stock_route_rowmatcheslockedstore",
+      "target": "stock_route_textvalue"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L87",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "stock_route_normalizerow",
+      "target": "stock_route_numericvalue"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "stock_route_datewithoffset",
+      "target": "stock_route_formatlocaldate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "stock_route_exceldatevalue",
+      "target": "stock_route_formatlocaldate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L140",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "stock_route_get",
+      "target": "stock_route_datewithoffset"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L91",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "stock_route_normalizerow",
+      "target": "stock_route_exceldatevalue"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L178",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "stock_route_get",
+      "target": "stock_route_uniquevalues"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/app/api/inventory/stock/route.ts",
+      "source_location": "L168",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "stock_route_get",
+      "target": "stock_route_buildweeklyconsumption"
     },
     {
       "relation": "imports_from",
@@ -4903,6 +5884,17 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "frontend_components_main_stockworkspace_tsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
       "source_location": "L19",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4926,9 +5918,9 @@
       "source_file": "Frontend/components/main/MainPage.tsx",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_components_main_mainpage_tsx",
-      "target": "main_mainpage_mainappid",
-      "confidence_score": 1.0
+      "target": "main_mainpage_mainappid"
     },
     {
       "relation": "contains",
@@ -4936,9 +5928,9 @@
       "source_file": "Frontend/components/main/MainPage.tsx",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_components_main_mainpage_tsx",
-      "target": "main_mainpage_mainsectionid",
-      "confidence_score": 1.0
+      "target": "main_mainpage_mainsectionid"
     },
     {
       "relation": "contains",
@@ -4946,9 +5938,9 @@
       "source_file": "Frontend/components/main/MainPage.tsx",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_components_main_mainpage_tsx",
-      "target": "main_mainpage_navitem",
-      "confidence_score": 1.0
+      "target": "main_mainpage_navitem"
     },
     {
       "relation": "contains",
@@ -4956,9 +5948,19 @@
       "source_file": "Frontend/components/main/MainPage.tsx",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_components_main_mainpage_tsx",
-      "target": "main_mainpage_navgroup",
-      "confidence_score": 1.0
+      "target": "main_mainpage_navgroup"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_daterangeid"
     },
     {
       "relation": "contains",
@@ -4986,9 +5988,29 @@
       "source_file": "Frontend/components/main/MainPage.tsx",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_components_main_mainpage_tsx",
-      "target": "main_mainpage_dashboarditem",
-      "confidence_score": 1.0
+      "target": "main_mainpage_dashboarditem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L105",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_storeoptions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L118",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_dateranges"
     },
     {
       "relation": "contains",
@@ -4996,9 +6018,9 @@
       "source_file": "Frontend/components/main/MainPage.tsx",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_components_main_mainpage_tsx",
-      "target": "main_mainpage_navgroups",
-      "confidence_score": 1.0
+      "target": "main_mainpage_navgroups"
     },
     {
       "relation": "contains",
@@ -5006,9 +6028,9 @@
       "source_file": "Frontend/components/main/MainPage.tsx",
       "source_location": "L147",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_components_main_mainpage_tsx",
-      "target": "main_mainpage_sectionlookup",
-      "confidence_score": 1.0
+      "target": "main_mainpage_sectionlookup"
     },
     {
       "relation": "contains",
@@ -5029,6 +6051,66 @@
       "confidence_score": 1.0,
       "source": "frontend_components_main_mainpage_tsx",
       "target": "main_mainpage_mainpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L184",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_topbarprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L256",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_formatshortdate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L260",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_getdatedaysago"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L267",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_parsedateinput"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L275",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_formatdaterangelabel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L279",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_mainpage_tsx",
+      "target": "main_mainpage_getdaterangelabel"
     },
     {
       "relation": "contains",
@@ -5372,16 +6454,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "Frontend/components/main/MainPage.tsx",
-      "source_location": "L184",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_components_main_mainpage_tsx",
-      "target": "main_mainpage_topbarprops"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "Frontend/components/main/MainPage.tsx",
       "source_location": "L417",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -5416,6 +6488,83 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L223",
+      "weight": 1.0,
+      "source": "main_mainpage_mainpage",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L276",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_mainpage_formatdaterangelabel",
+      "target": "main_mainpage_formatshortdate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L285",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_mainpage_getdaterangelabel",
+      "target": "main_mainpage_getdatedaysago"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L292",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_mainpage_getdaterangelabel",
+      "target": "main_mainpage_parsedateinput"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L285",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_mainpage_getdaterangelabel",
+      "target": "main_mainpage_formatdaterangelabel"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L312",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_mainpage_topbar",
+      "target": "main_mainpage_getdaterangelabel"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/components/main/MainPage.tsx",
+      "source_location": "L319",
+      "weight": 1.0,
+      "source": "main_mainpage_topbar",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/components/main/MainPage.tsx",
       "source_location": "L314",
       "weight": 1.0,
       "source": "main_mainpage_sidebar",
@@ -5431,6 +6580,841 @@
       "confidence_score": 1.0,
       "source": "main_mainpage_contentheader",
       "target": "main_mainpage_activesectiondescription"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "frontend_lib_utils_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_stockrow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_chartpoint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_weeklyconsumptionpoint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_stockapiresponse"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_filtercolumnid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_comparisonoperator"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L63",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_expirypreset"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_selectedfilter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_filterdraft"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_selectoption"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_tablecolumn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L68",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_chartcolors"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L90",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_healthchartcolors"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L96",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_comparisonlabels"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L101",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_expirypresetlabels"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L113",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_comparisonoptions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_numberformatter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_currencyformatter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_formatnumber"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_formatcurrency"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_formatquantity"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_formatdate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L142",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_formatdatecontrollabel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L146",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_todateinputvalue"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L153",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_getcalendardays"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L165",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_getmonthlabel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L169",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_issameday"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_tablecolumns"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L163",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_defaultfilterdraft"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L173",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_draftfromfilter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L199",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_comparenumbers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L211",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_parselocaldate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L225",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_adddays"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L231",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_datematchespreset"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L246",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_rowmatchesfilter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L131",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_getfilteredrows"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L290",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_getchartcolor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L294",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_clamppage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L140",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_stockworkspace"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L749",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_filtermenuprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L765",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_filtermenu"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L898",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_comparisoncontrolsprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L906",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_comparisoncontrols"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L977",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_inventoryselectprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L984",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_inventoryselect"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L937",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_inventorydatepickerprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L942",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_inventorydatepicker"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L939",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_inventorypaginationprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L948",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_inventorypagination"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L416",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_statuscardprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L422",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_statuscard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L1007",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_piechartvariant"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L436",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_piechartprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L441",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_piechart"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L140",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_formatquantities"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_components_main_stockworkspace_tsx",
+      "target": "main_stockworkspace_buildconicgradient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_stockworkspace_formatquantity",
+      "target": "main_stockworkspace_formatnumber"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L1058",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_stockworkspace_piechart",
+      "target": "main_stockworkspace_formatnumber"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L239",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_stockworkspace_stockworkspace",
+      "target": "main_stockworkspace_formatcurrency"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L1064",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_stockworkspace_piechart",
+      "target": "main_stockworkspace_formatcurrency"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L143",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_stockworkspace_formatdatecontrollabel",
+      "target": "main_stockworkspace_formatdate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L980",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_stockworkspace_inventorydatepicker",
+      "target": "main_stockworkspace_formatdatecontrollabel"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L170",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_stockworkspace_issameday",
+      "target": "main_stockworkspace_todateinputvalue"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L1000",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_stockworkspace_inventorydatepicker",
+      "target": "main_stockworkspace_getcalendardays"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L989",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_stockworkspace_inventorydatepicker",
+      "target": "main_stockworkspace_getmonthlabel"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L174",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_stockworkspace_draftfromfilter",
+      "target": "main_stockworkspace_defaultfilterdraft"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L256",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_stockworkspace_rowmatchesfilter",
+      "target": "main_stockworkspace_comparenumbers"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L264",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_stockworkspace_rowmatchesfilter",
+      "target": "main_stockworkspace_parselocaldate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L943",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_stockworkspace_inventorydatepicker",
+      "target": "main_stockworkspace_parselocaldate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L236",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_stockworkspace_datematchespreset",
+      "target": "main_stockworkspace_adddays"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L270",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_stockworkspace_rowmatchesfilter",
+      "target": "main_stockworkspace_datematchespreset"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L227",
+      "weight": 1.0,
+      "source": "main_stockworkspace_stockworkspace",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L796",
+      "weight": 1.0,
+      "source": "main_stockworkspace_filtermenu",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L1004",
+      "weight": 1.0,
+      "source": "main_stockworkspace_inventoryselect",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L978",
+      "weight": 1.0,
+      "source": "main_stockworkspace_inventorydatepicker",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L1055",
+      "weight": 1.0,
+      "source": "main_stockworkspace_inventorypagination",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L1026",
+      "weight": 1.0,
+      "source": "main_stockworkspace_piechart",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L1063",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_stockworkspace_piechart",
+      "target": "main_stockworkspace_formatquantities"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Frontend/components/main/StockWorkspace.tsx",
+      "source_location": "L447",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_stockworkspace_piechart",
+      "target": "main_stockworkspace_buildconicgradient"
     },
     {
       "relation": "imports_from",
@@ -7293,5 +9277,5 @@
       "source_file": "Frontend/public/assets/pizza-quarter.png"
     }
   ],
-  "built_at_commit": "798dba7396f32eefdc2f1234bff3a6da844fd69d"
+  "built_at_commit": "61b23dc98fc0bf43b1e7ffd381850c21d0929583"
 }

@@ -1,9 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import StockWorkspace from "@/components/main/StockWorkspace";
 import {
   BarChart3,
+  Bell,
   BookOpenText,
+  CalendarDays,
   ChevronDown,
   ChevronLeft,
   ChevronRight,
@@ -14,11 +17,13 @@ import {
   FileText,
   Gauge,
   History,
+  Moon,
   PackageCheck,
   ReceiptText,
   Search,
   Settings,
   SlidersHorizontal,
+  Sun,
   TrendingDown,
   UsersRound,
   UtensilsCrossed,
@@ -26,7 +31,7 @@ import {
   X,
   type LucideIcon,
 } from "lucide-react";
-import { useEffect, useState, type KeyboardEvent as ReactKeyboardEvent } from "react";
+import { useEffect, useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from "react";
 import { cn } from "@/lib/utils";
 
 type MainAppId = "analytics" | "inventory" | "consumption" | "kitchen" | "management";
@@ -62,6 +67,8 @@ type NavGroup = {
   items: NavItem[];
 };
 
+type DateRangeId = "1d" | "1w" | "1m" | "custom";
+
 const appLabels: Record<MainAppId, string> = {
   analytics: "Analytics",
   inventory: "Inventory",
@@ -95,6 +102,28 @@ const dashboardItem: NavItem = {
   app: "analytics",
   icon: Gauge,
 };
+
+const lockedStoreLabel = "Central Store";
+
+const storeOptions = [
+  "Central Store",
+  "Semi Kitchen",
+  "Bocca Bakery",
+  "Bocca Cafe",
+  "Bocca Lite",
+  "Bocca Book Store",
+  "Terra Rosso",
+  "Master Canteen",
+  "Bocca Patia",
+  "Bocca Kalabhoomi",
+] as const;
+
+const dateRanges: { id: DateRangeId; label: string }[] = [
+  { id: "1d", label: "1 Day" },
+  { id: "1w", label: "1 Week" },
+  { id: "1m", label: "1 Month" },
+  { id: "custom", label: "Custom" },
+];
 
 const navGroups: NavGroup[] = [
   {
@@ -160,6 +189,7 @@ export default function MainPage() {
   const [activeSection, setActiveSection] = useState<MainSectionId>("dashboard");
   const [expandedGroup, setExpandedGroup] = useState<MainAppId | null>("analytics");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const activeItem = sectionLookup[activeSection];
   const activeApp = getAppForSection(activeSection);
@@ -191,9 +221,9 @@ export default function MainPage() {
   }
 
   return (
-    <main className="main-page min-h-screen bg-[oklch(1_0_0)] text-[#20242c]" onKeyDown={handleGlobalKeyDown}>
+    <main className={cn("main-page min-h-screen bg-[oklch(1_0_0)] text-[#20242c]", isDarkMode ? "is-dark" : "")} onKeyDown={handleGlobalKeyDown}>
       <div className="mx-auto flex min-h-screen w-full max-w-[1920px] flex-col px-4 py-4 sm:px-6 lg:px-8">
-        <TopBar />
+        <TopBar isDarkMode={isDarkMode} onDarkModeToggle={() => setIsDarkMode((current) => !current)} />
 
         <div className="main-workspace grid flex-1 grid-cols-1 gap-5 pt-5 lg:grid-cols-[270px_minmax(0,1fr)]">
           <Sidebar
@@ -206,9 +236,15 @@ export default function MainPage() {
 
           <section className="main-content-surface min-h-0 overflow-hidden rounded-[8px]" aria-label={`${appLabels[activeApp]} workspace`}>
             <div className="flex min-h-full flex-col gap-5 overflow-y-auto px-1 pb-5 lg:px-2">
-              <ContentHeader activeApp={activeApp} activeItem={activeItem} onOpenModal={() => setIsModalOpen(true)} />
-              <DashboardGrid activeSection={activeSection} />
-              <DataWorkspace activeSection={activeSection} />
+              {activeSection === "stock" ? (
+                <StockWorkspace />
+              ) : (
+                <>
+                  <ContentHeader activeApp={activeApp} activeItem={activeItem} onOpenModal={() => setIsModalOpen(true)} />
+                  <DashboardGrid activeSection={activeSection} />
+                  <DataWorkspace activeSection={activeSection} />
+                </>
+              )}
             </div>
           </section>
         </div>
@@ -219,7 +255,111 @@ export default function MainPage() {
   );
 }
 
-function TopBar() {
+type TopBarProps = {
+  isDarkMode: boolean;
+  onDarkModeToggle: () => void;
+};
+
+function formatShortDate(date: Date) {
+  return new Intl.DateTimeFormat("en-US", { day: "numeric", month: "short" }).format(date);
+}
+
+function getDateDaysAgo(daysAgo: number) {
+  const date = new Date();
+  date.setHours(0, 0, 0, 0);
+  date.setDate(date.getDate() - daysAgo);
+  return date;
+}
+
+function parseDateInput(value: string) {
+  if (!value) {
+    return null;
+  }
+
+  return new Date(`${value}T00:00:00`);
+}
+
+function formatDateRangeLabel(fromDate: Date, toDate: Date) {
+  return `${formatShortDate(fromDate)} - ${formatShortDate(toDate)}`;
+}
+
+function getDateRangeLabel(rangeId: DateRangeId, customFromDate: string, customToDate: string) {
+  if (rangeId === "1d") {
+    return "1 Day";
+  }
+
+  if (rangeId === "1w") {
+    return formatDateRangeLabel(getDateDaysAgo(6), getDateDaysAgo(0));
+  }
+
+  if (rangeId === "1m") {
+    return formatDateRangeLabel(getDateDaysAgo(29), getDateDaysAgo(0));
+  }
+
+  const fromDate = parseDateInput(customFromDate);
+  const toDate = parseDateInput(customToDate);
+
+  if (fromDate && toDate) {
+    return formatDateRangeLabel(fromDate, toDate);
+  }
+
+  return "Custom Range";
+}
+
+function TopBar({ isDarkMode, onDarkModeToggle }: TopBarProps) {
+  const [isStoreMenuOpen, setIsStoreMenuOpen] = useState(false);
+  const [isDateMenuOpen, setIsDateMenuOpen] = useState(false);
+  const [isCustomDateOpen, setIsCustomDateOpen] = useState(false);
+  const [activeDateRange, setActiveDateRange] = useState<DateRangeId>("1w");
+  const [customFromDate, setCustomFromDate] = useState("");
+  const [customToDate, setCustomToDate] = useState("");
+  const storeMenuRef = useRef<HTMLDivElement>(null);
+  const dateMenuRef = useRef<HTMLDivElement>(null);
+
+  const activeDateRangeLabel = getDateRangeLabel(activeDateRange, customFromDate, customToDate);
+  const DarkModeIcon = isDarkMode ? Sun : Moon;
+
+  useEffect(() => {
+    function handleDocumentPointerDown(event: PointerEvent) {
+      const target = event.target as Node;
+
+      if (storeMenuRef.current && !storeMenuRef.current.contains(target)) {
+        setIsStoreMenuOpen(false);
+      }
+
+      if (dateMenuRef.current && !dateMenuRef.current.contains(target)) {
+        setIsDateMenuOpen(false);
+        setIsCustomDateOpen(false);
+      }
+    }
+
+    function handleDocumentKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setIsStoreMenuOpen(false);
+        setIsDateMenuOpen(false);
+        setIsCustomDateOpen(false);
+      }
+    }
+
+    document.addEventListener("pointerdown", handleDocumentPointerDown);
+    document.addEventListener("keydown", handleDocumentKeyDown);
+
+    return () => {
+      document.removeEventListener("pointerdown", handleDocumentPointerDown);
+      document.removeEventListener("keydown", handleDocumentKeyDown);
+    };
+  }, []);
+
+  function handleStoreOptionClick() {
+    setIsStoreMenuOpen(false);
+  }
+
+  function handleDateRangeClick(rangeId: DateRangeId) {
+    setActiveDateRange(rangeId);
+    setIsDateMenuOpen(false);
+    setIsCustomDateOpen(rangeId === "custom");
+  }
+
   return (
     <header className="main-topbar rounded-[8px] px-4 py-3 sm:px-5">
       <div className="grid gap-4 lg:grid-cols-[220px_minmax(240px,1fr)_auto] lg:items-center">
@@ -235,11 +375,101 @@ function TopBar() {
           <span className="bocca-logo">BOCCA</span>
         </a>
 
-        <div className="flex min-w-0 items-center justify-center">
-          <div className="main-empty-control h-11 w-full max-w-[420px] rounded-[8px]" aria-hidden="true" />
+        <div className="relative flex min-w-0 items-center justify-center" ref={storeMenuRef}>
+          <button
+            type="button"
+            className={cn("main-store-picker", isStoreMenuOpen ? "is-open" : "")}
+            aria-haspopup="menu"
+            aria-expanded={isStoreMenuOpen}
+            aria-controls="main-store-menu"
+            onClick={() => setIsStoreMenuOpen((current) => !current)}
+          >
+            <span>{lockedStoreLabel}</span>
+            <ChevronDown className={cn("size-4 transition-transform duration-200", isStoreMenuOpen ? "rotate-180" : "")} aria-hidden="true" />
+          </button>
+
+          {isStoreMenuOpen ? (
+            <div id="main-store-menu" className="main-menu main-store-menu" role="menu" aria-label="Store picker">
+              {storeOptions.map((store) => (
+                <button
+                  key={store}
+                  type="button"
+                  className={cn("main-menu-item", store === lockedStoreLabel ? "is-selected" : "")}
+                  role="menuitem"
+                  aria-current={store === lockedStoreLabel ? "true" : undefined}
+                  onClick={handleStoreOptionClick}
+                >
+                  {store}
+                </button>
+              ))}
+            </div>
+          ) : null}
         </div>
 
         <div className="main-actions flex items-center justify-start gap-2 lg:justify-end">
+          <div className="relative" ref={dateMenuRef}>
+            <button
+              type="button"
+              className={cn("main-date-picker", isDateMenuOpen || isCustomDateOpen ? "is-open" : "")}
+              aria-haspopup="menu"
+              aria-expanded={isDateMenuOpen || isCustomDateOpen}
+              aria-controls="main-date-menu"
+              onClick={() => {
+                setIsDateMenuOpen((current) => !current);
+                setIsCustomDateOpen(false);
+              }}
+            >
+              <CalendarDays className="size-4 text-[#236f87]" aria-hidden="true" />
+              <span>{activeDateRangeLabel}</span>
+              <ChevronDown className={cn("size-4 transition-transform duration-200", isDateMenuOpen ? "rotate-180" : "")} aria-hidden="true" />
+            </button>
+
+            {isDateMenuOpen ? (
+              <div id="main-date-menu" className="main-menu main-date-menu" role="menu" aria-label="Date range picker">
+                {dateRanges.map((range) => (
+                  <button
+                    key={range.id}
+                    type="button"
+                    className={cn("main-menu-item", activeDateRange === range.id ? "is-selected" : "")}
+                    role="menuitem"
+                    aria-current={activeDateRange === range.id ? "true" : undefined}
+                    onClick={() => handleDateRangeClick(range.id)}
+                  >
+                    {range.label}
+                  </button>
+                ))}
+              </div>
+            ) : null}
+
+            {isCustomDateOpen ? (
+              <div className="main-menu main-custom-date-popover" role="dialog" aria-label="Custom date range">
+                <label>
+                  <span>From</span>
+                  <input type="date" value={customFromDate} onChange={(event) => setCustomFromDate(event.target.value)} />
+                </label>
+                <label>
+                  <span>To</span>
+                  <input type="date" value={customToDate} onChange={(event) => setCustomToDate(event.target.value)} />
+                </label>
+              </div>
+            ) : null}
+          </div>
+
+          <button type="button" className="main-action-button grid size-10 place-items-center rounded-[8px] bg-[#f7f9fb] text-[#475467] transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#236f87]/35" aria-label="Notifications">
+            <Bell className="size-5" aria-hidden="true" />
+          </button>
+          <button
+            type="button"
+            className={cn("main-dark-toggle", isDarkMode ? "is-on" : "")}
+            aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
+            aria-pressed={isDarkMode}
+            onClick={onDarkModeToggle}
+          >
+            <DarkModeIcon className="size-4" aria-hidden="true" />
+            <span className="main-dark-toggle-track" aria-hidden="true">
+              <span />
+            </span>
+          </button>
           <button type="button" className="main-action-button grid size-10 place-items-center rounded-[8px] bg-[#f7f9fb] text-[#475467] transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#236f87]/35" aria-label="Settings">
             <Settings className="size-5" aria-hidden="true" />
           </button>
@@ -263,57 +493,59 @@ type SidebarProps = {
 
 function Sidebar({ activeSection, expandedGroup, onDashboardSelect, onGroupToggle, onItemSelect }: SidebarProps) {
   return (
-    <aside className="main-sidebar min-h-0 rounded-[8px] p-2 lg:p-3" aria-label="Main navigation">
-      <button
-        type="button"
-        className={cn("main-nav-root", activeSection === "dashboard" ? "is-selected" : "")}
-        aria-current={activeSection === "dashboard" ? "page" : undefined}
-        onClick={onDashboardSelect}
-      >
-        <dashboardItem.icon className="size-4" aria-hidden="true" />
-        <span>{dashboardItem.label}</span>
-      </button>
+    <aside className="main-sidebar flex min-h-0 flex-col rounded-[8px] p-2 lg:p-3" aria-label="Main navigation">
+      <div className="main-nav-scroll min-h-0 flex-1">
+        <button
+          type="button"
+          className={cn("main-nav-root", activeSection === "dashboard" ? "is-selected" : "")}
+          aria-current={activeSection === "dashboard" ? "page" : undefined}
+          onClick={onDashboardSelect}
+        >
+          <dashboardItem.icon className="size-4" aria-hidden="true" />
+          <span>{dashboardItem.label}</span>
+        </button>
 
-      <div className="mt-2 space-y-1">
-        {navGroups.map((group) => {
-          const isExpanded = expandedGroup === group.id;
-          const groupContainsActive = group.items.some((item) => item.id === activeSection);
+        <div className="mt-2 space-y-1">
+          {navGroups.map((group) => {
+            const isExpanded = expandedGroup === group.id;
+            const groupContainsActive = group.items.some((item) => item.id === activeSection);
 
-          return (
-            <section key={group.id} className="main-nav-group">
-              <button
-                type="button"
-                className={cn("main-nav-group-button", groupContainsActive ? "is-selected" : "")}
-                aria-expanded={isExpanded}
-                aria-controls={`${group.id}-items`}
-                onClick={() => onGroupToggle(group.id)}
-              >
-                <span>{group.label}</span>
-                <ChevronDown className={cn("size-4 transition-transform duration-300", isExpanded ? "rotate-180" : "")} aria-hidden="true" />
-              </button>
-              <div id={`${group.id}-items`} className={cn("main-nav-items-grid", isExpanded ? "is-open" : "")} aria-hidden={!isExpanded}>
-                <div className="main-nav-items-inner">
-                  {group.items.map((item) => {
-                    const Icon = item.icon;
-                    return (
-                      <button
-                        key={item.id}
-                        type="button"
-                        className={cn("main-nav-item", activeSection === item.id ? "is-selected" : "")}
-                        aria-current={activeSection === item.id ? "page" : undefined}
-                        tabIndex={isExpanded ? 0 : -1}
-                        onClick={() => onItemSelect(item)}
-                      >
-                        <Icon className="size-4" aria-hidden="true" />
-                        <span>{item.label}</span>
-                      </button>
-                    );
-                  })}
+            return (
+              <section key={group.id} className="main-nav-group">
+                <button
+                  type="button"
+                  className={cn("main-nav-group-button", groupContainsActive ? "is-selected" : "")}
+                  aria-expanded={isExpanded}
+                  aria-controls={`${group.id}-items`}
+                  onClick={() => onGroupToggle(group.id)}
+                >
+                  <span>{group.label}</span>
+                  <ChevronDown className={cn("size-4 transition-transform duration-300", isExpanded ? "rotate-180" : "")} aria-hidden="true" />
+                </button>
+                <div id={`${group.id}-items`} className={cn("main-nav-items-grid", isExpanded ? "is-open" : "")} aria-hidden={!isExpanded}>
+                  <div className="main-nav-items-inner">
+                    {group.items.map((item) => {
+                      const Icon = item.icon;
+                      return (
+                        <button
+                          key={item.id}
+                          type="button"
+                          className={cn("main-nav-item", activeSection === item.id ? "is-selected" : "")}
+                          aria-current={activeSection === item.id ? "page" : undefined}
+                          tabIndex={isExpanded ? 0 : -1}
+                          onClick={() => onItemSelect(item)}
+                        >
+                          <Icon className="size-4" aria-hidden="true" />
+                          <span>{item.label}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            </section>
-          );
-        })}
+              </section>
+            );
+          })}
+        </div>
       </div>
     </aside>
   );
@@ -400,7 +632,7 @@ function DataWorkspace({ activeSection }: DataWorkspaceProps) {
       </div>
 
       <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-sm font-semibold text-[#667085]">Page 0 of 0 · 0 rows</p>
+        <p className="text-sm font-semibold text-[#667085]">Page 0 of 0 - 0 rows</p>
         <div className="flex items-center gap-2">
           <button type="button" className="main-pagination-button" disabled>
             <ChevronLeft className="size-4" aria-hidden="true" />

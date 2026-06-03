@@ -1,16 +1,16 @@
-# Graph Report - BoccaCafe-Inventory  (2026-06-02)
+# Graph Report - BoccaCafe-Inventory  (2026-06-03)
 
 ## Corpus Check
-- 30 files · ~1,437,253 words
+- 32 files · ~1,460,055 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 310 nodes · 381 edges · 32 communities (20 shown, 12 thin omitted)
-- Extraction: 92% EXTRACTED · 7% INFERRED · 1% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.82)
+- 390 nodes · 503 edges · 41 communities (28 shown, 13 thin omitted)
+- Extraction: 94% EXTRACTED · 5% INFERRED · 1% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.82)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `798dba73`
+- Built from commit: `61b23dc9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -43,18 +43,27 @@
 - [[_COMMUNITY_Community 26|Community 26]]
 - [[_COMMUNITY_Community 27|Community 27]]
 - [[_COMMUNITY_Community 31|Community 31]]
+- [[_COMMUNITY_Community 32|Community 32]]
+- [[_COMMUNITY_Community 33|Community 33]]
+- [[_COMMUNITY_Community 34|Community 34]]
+- [[_COMMUNITY_Community 35|Community 35]]
+- [[_COMMUNITY_Community 36|Community 36]]
+- [[_COMMUNITY_Community 37|Community 37]]
+- [[_COMMUNITY_Community 38|Community 38]]
+- [[_COMMUNITY_Community 39|Community 39]]
+- [[_COMMUNITY_Community 40|Community 40]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 18 edges
-2. `Exploded Gourmet Burger (Vertical Stack)` - 14 edges
-3. `Pizza Quarter Slice` - 10 edges
-4. `scripts` - 9 edges
-5. `cn()` - 7 edges
+2. `cn()` - 16 edges
+3. `Exploded Gourmet Burger (Vertical Stack)` - 14 edges
+4. `Pizza Quarter Slice` - 10 edges
+5. `scripts` - 9 edges
 6. `LoginPage` - 7 edges
 7. `burger-right.png decorative food photograph` - 7 edges
 8. `tailwind` - 6 edges
 9. `aliases` - 6 edges
-10. `LoginCard` - 6 edges
+10. `InventoryDatePicker()` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Playwright accessibility tree of login page` --semantically_similar_to--> `LoginPage`  [AMBIGUOUS] [semantically similar]
@@ -79,7 +88,7 @@
 - **Identifiable Cafe Burger Inventory Ingredients** — burger_stack_top_bun, burger_stack_bottom_bun, burger_stack_lettuce_top, burger_stack_lettuce_bottom, burger_stack_red_onion_top, burger_stack_red_onion_bottom, burger_stack_tomato_top, burger_stack_tomato_middle, burger_stack_tomato_bottom, burger_stack_cheddar_cheese, burger_stack_beef_patty, burger_stack_pickles, burger_stack_sauces [INFERRED 0.75]
 - **Buffalo Chicken Pizza Toppings** — pizza-quarter_melted_cheese, pizza-quarter_buffalo_chicken, pizza-quarter_red_onion, pizza-quarter_jalapeno, pizza-quarter_cilantro, pizza-quarter_red_pepper_flakes [EXTRACTED 1.00]
 
-## Communities (32 total, 12 thin omitted)
+## Communities (41 total, 13 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.10
@@ -87,7 +96,7 @@ Nodes (20): compilerOptions, allowJs, baseUrl, esModuleInterop, incremental, iso
 
 ### Community 1 - "Community 1"
 Cohesion: 0.07
-Nodes (32): dependencies, class-variance-authority, clsx, lucide-react, next, radix-ui, react, react-dom (+24 more)
+Nodes (33): dependencies, class-variance-authority, clsx, lucide-react, next, radix-ui, react, react-dom (+25 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.19
@@ -118,8 +127,8 @@ Cohesion: 0.09
 Nodes (29): buildPipeStyle(), CustomProperties, PipeStyle, viewportKeys, CustomProperties, MapButton(), MapButtonProps, NodeStyle (+21 more)
 
 ### Community 9 - "Community 9"
-Cohesion: 0.29
-Nodes (7): inter, metadata, RootLayout(), cn(), Sidebar(), Button(), buttonVariants
+Cohesion: 0.06
+Nodes (31): chartColors, ChartPoint, ComparisonControlsProps, comparisonLabels, ComparisonOperator, comparisonOptions, currencyFormatter, defaultFilterDraft() (+23 more)
 
 ### Community 10 - "Community 10"
 Cohesion: 0.67
@@ -142,8 +151,40 @@ Cohesion: 0.50
 Nodes (3): Answer, Q: What is the exact relationship between LoginPage and Playwright accessibility tree of login page?, Source Nodes
 
 ### Community 31 - "Community 31"
-Cohesion: 0.05
-Nodes (43): ActionHint, actionHints, ActivityItem, activityItems, categoryPoints, ChartPoint, dashboardItem, DateRangeId (+35 more)
+Cohesion: 0.09
+Nodes (22): ActionHint, actionHints, ActivityItem, activityItems, categoryPoints, ChartPoint, dashboardItem, DateRangeId (+14 more)
+
+### Community 32 - "Community 32"
+Cohesion: 0.08
+Nodes (19): appDescriptions, appLabels, ContentHeaderProps, DashboardGridProps, dashboardItem, DataWorkspaceProps, DateRangeId, dateRanges (+11 more)
+
+### Community 33 - "Community 33"
+Cohesion: 0.50
+Nodes (4): activeSectionDescription(), ContentHeader(), getAppForSection(), MainPage()
+
+### Community 35 - "Community 35"
+Cohesion: 0.33
+Nodes (6): formatDateRangeLabel(), formatShortDate(), getDateDaysAgo(), getDateRangeLabel(), parseDateInput(), TopBar()
+
+### Community 36 - "Community 36"
+Cohesion: 0.26
+Nodes (12): buildWeeklyConsumption(), dateWithOffset(), excelDateValue(), formatLocalDate(), GET(), InventoryRow, normalizeRow(), numericValue() (+4 more)
+
+### Community 37 - "Community 37"
+Cohesion: 0.21
+Nodes (10): inter, metadata, RootLayout(), cn(), Sidebar(), FilterMenu(), InventoryPagination(), InventorySelect() (+2 more)
+
+### Community 38 - "Community 38"
+Cohesion: 0.29
+Nodes (7): buildConicGradient(), formatCurrency(), formatNumber(), formatQuantities(), formatQuantity(), PieChart(), StockWorkspace()
+
+### Community 39 - "Community 39"
+Cohesion: 0.40
+Nodes (5): addDays(), compareNumbers(), dateMatchesPreset(), parseLocalDate(), rowMatchesFilter()
+
+### Community 40 - "Community 40"
+Cohesion: 0.40
+Nodes (5): formatDate(), formatDateControlLabel(), getCalendarDays(), getMonthLabel(), InventoryDatePicker()
 
 ## Ambiguous Edges - Review These
 - `LoginPage` → `BoccaCafe-Inventory project`  [AMBIGUOUS]
@@ -158,9 +199,9 @@ Nodes (43): ActionHint, actionHints, ActivityItem, activityItems, categoryPoints
   Frontend/public/assets/burger-right.png · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **131 isolated node(s):** `PreToolUse`, `$schema`, `plugin`, `@opencode-ai/plugin`, `$schema` (+126 more)
+- **164 isolated node(s):** `PreToolUse`, `$schema`, `plugin`, `@opencode-ai/plugin`, `$schema` (+159 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -175,7 +216,7 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **What is the exact relationship between `Two seared beef patties` and `Crispy bacon or chopped tomato bits between patties`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `cn()` connect `Community 9` to `Community 31`?**
-  _High betweenness centrality (0.007) - this node is a cross-community bridge._
+- **Why does `cn()` connect `Community 37` to `Community 32`, `Community 33`, `Community 35`, `Community 38`, `Community 40`, `Community 9`?**
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **What connects `PreToolUse`, `$schema`, `plugin` to the rest of the system?**
-  _134 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _167 weakly-connected nodes found - possible documentation gaps or missing edges._
