@@ -4,7 +4,11 @@ import { type FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { buildLoginPayload, loginFields, rememberField } from "@/scripts/login";
 
-export default function LoginCard() {
+type LoginCardProps = {
+  onLoginSuccess?: () => void;
+};
+
+export default function LoginCard({ onLoginSuccess }: LoginCardProps = {}) {
   const router = useRouter();
   const [status, setStatus] = useState<string>("");
 
@@ -14,7 +18,11 @@ export default function LoginCard() {
 
     if (payload.identifier === "admin" && payload.password === "password") {
       setStatus("");
-      router.push("/home");
+      if (onLoginSuccess) {
+        onLoginSuccess();
+      } else {
+        router.push("/home");
+      }
       return;
     }
 

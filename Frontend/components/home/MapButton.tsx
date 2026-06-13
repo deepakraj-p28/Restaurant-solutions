@@ -3,7 +3,7 @@
 import type { CSSProperties, KeyboardEvent } from "react";
 import { useRouter } from "next/navigation";
 import StatusPopup from "@/components/home/StatusPopup";
-import type { HomeNode, NodeId } from "@/scripts/homepage";
+import type { FlowWave, HomeNode, NodeId } from "@/scripts/homepage";
 import { formatPercent, motionSettings } from "@/scripts/homepage";
 
 type CustomProperties = Record<`--${string}`, string | number>;
@@ -11,20 +11,26 @@ type NodeStyle = CSSProperties & CustomProperties;
 
 type MapButtonProps = {
   node: HomeNode;
+  flowWave?: FlowWave | null;
   activeNodeId: NodeId | null;
   isConnected: boolean;
   isDimmed: boolean;
   onActivate: (nodeId: NodeId) => void;
   onDeactivate: () => void;
+  onNavigate?: (path: string) => void;
+  onImageLoad?: (nodeId: NodeId) => void;
 };
 
 export default function MapButton({
   node,
+  flowWave,
   activeNodeId,
   isConnected,
   isDimmed,
   onActivate,
   onDeactivate,
+  onNavigate,
+  onImageLoad,
 }: MapButtonProps) {
   const router = useRouter();
   const popupId = `${node.id}-status`;
@@ -57,7 +63,11 @@ export default function MapButton({
 
   function handleClick() {
     if (node.id === "central-kitchen") {
-      router.push("/main");
+      if (onNavigate) {
+        onNavigate("/main");
+      } else {
+        router.push("/main");
+      }
     }
   }
 
@@ -67,6 +77,7 @@ export default function MapButton({
         "home-node-wrap",
         `home-node-wrap--${node.size}`,
         `home-node-wrap--depth-${node.depth}`,
+        flowWave ? `home-node-wrap--flow-source-wave-${flowWave}` : "",
         isActive ? "is-active" : "",
         isConnected ? "is-connected" : "",
         isDimmed ? "is-dimmed" : "",
@@ -96,6 +107,8 @@ export default function MapButton({
             src={imagePath}
             alt={node.label}
             style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+            onLoad={() => onImageLoad?.(node.id)}
+            onError={() => onImageLoad?.(node.id)}
           />
         </span>
       </button>

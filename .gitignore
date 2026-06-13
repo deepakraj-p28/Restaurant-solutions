@@ -9,6 +9,8 @@ Frontend/public/assets/References/
 .env
 .env*.local
 
+NUL
+
 Frontend/npm-debug.log*
 Frontend/yarn-debug.log*
 Frontend/yarn-error.log*

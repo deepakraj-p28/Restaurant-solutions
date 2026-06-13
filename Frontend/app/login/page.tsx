@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import LoginCard from "@/components/login/LoginCard";
 import Image from "next/image";
 
@@ -26,8 +30,18 @@ const foodItems = [
 ] as const;
 
 export default function LoginPage() {
+  const router = useRouter();
+  const [isExiting, setIsExiting] = useState(false);
+
+  function handleLoginSuccess() {
+    setIsExiting(true);
+    setTimeout(() => {
+      router.push("/home");
+    }, 500);
+  }
+
   return (
-    <main className="login-page relative isolate min-h-screen overflow-hidden bg-bocca-paper px-5 py-6 text-bocca-ink sm:px-8">
+    <main className={`login-page relative isolate min-h-screen overflow-hidden bg-bocca-paper px-5 py-6 text-bocca-ink sm:px-8 transition-all duration-500 ease-in-out ${isExiting ? "opacity-0 scale-105 pointer-events-none" : "opacity-100 scale-100"}`}>
       <a
         className="bocca-logo absolute left-7 top-7 z-20 text-bocca-blue"
         href="/login"
@@ -51,7 +65,7 @@ export default function LoginPage() {
       </div>
 
       <section className="relative z-10 flex min-h-[calc(100vh-3rem)] flex-col items-center justify-center gap-6 pt-20 text-center sm:min-h-[calc(100vh-4rem)] sm:pt-12">
-        <LoginCard />
+        <LoginCard onLoginSuccess={handleLoginSuccess} />
 
         <div className="hero-copy select-none" aria-label="BoccaCafe culture art cafe since 2014">
           <p className="culture-title font-display text-[clamp(2.35rem,5vw,5.65rem)] font-black uppercase leading-[0.85] text-bocca-ink">

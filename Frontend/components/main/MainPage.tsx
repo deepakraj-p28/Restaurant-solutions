@@ -190,11 +190,14 @@ export default function MainPage() {
   const [expandedGroup, setExpandedGroup] = useState<MainAppId | null>("analytics");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   const activeItem = sectionLookup[activeSection];
   const activeApp = getAppForSection(activeSection);
 
   useEffect(() => {
+    setIsMounted(true);
+
     function handleDocumentKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
         setIsModalOpen(false);
@@ -221,7 +224,14 @@ export default function MainPage() {
   }
 
   return (
-    <main className={cn("main-page min-h-screen bg-[oklch(1_0_0)] text-[#20242c]", isDarkMode ? "is-dark" : "")} onKeyDown={handleGlobalKeyDown}>
+    <main 
+      className={cn(
+        "main-page min-h-screen bg-[oklch(1_0_0)] text-[#20242c] transition-all duration-700 ease-out", 
+        isDarkMode ? "is-dark" : "",
+        isMounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+      )} 
+      onKeyDown={handleGlobalKeyDown}
+    >
       <div className="mx-auto flex min-h-screen w-full max-w-[1920px] flex-col px-4 py-4 sm:px-6 lg:px-8">
         <TopBar isDarkMode={isDarkMode} onDarkModeToggle={() => setIsDarkMode((current) => !current)} />
 

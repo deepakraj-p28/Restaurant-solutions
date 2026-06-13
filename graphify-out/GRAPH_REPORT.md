@@ -1,16 +1,16 @@
-# Graph Report - BoccaCafe-Inventory  (2026-06-03)
+# Graph Report - BoccaCafe-Inventory  (2026-06-13)
 
 ## Corpus Check
-- 32 files · ~1,496,203 words
+- 32 files · ~1,496,576 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 390 nodes · 503 edges · 41 communities (28 shown, 13 thin omitted)
+- 397 nodes · 513 edges · 41 communities (28 shown, 13 thin omitted)
 - Extraction: 94% EXTRACTED · 5% INFERRED · 1% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.82)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `de5f16f9`
+- Built from commit: `8cc160a7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -115,16 +115,16 @@ Cohesion: 0.20
 Nodes (12): Buffalo-Style Chicken Chunks, Fresh Cilantro Garnish, Golden-Brown Pizza Crust, Pizza Quarter Image Asset, Jalapeño Pepper Slice, Melted Mozzarella Cheese, Pizza Quarter Slice, Sliced Red Onion (+4 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.29
-Nodes (8): LoginCard(), foodItems, LoginPage(), buildLoginPayload(), LoginField, loginFields, LoginPayload, rememberField
+Cohesion: 0.26
+Nodes (9): LoginCard(), LoginCardProps, foodItems, LoginPage(), buildLoginPayload(), LoginField, loginFields, LoginPayload (+1 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.25
 Nodes (9): App Icon (icon.svg), Rounded Square Background (#303136), BO Monogram Text, Bocca Cafe Brand Abbreviation (BO), 64×64 Viewport, 18px Corner Radius, Impact / Arial Narrow Typography, Next.js App Router Metadata Icon (+1 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.09
-Nodes (29): buildPipeStyle(), CustomProperties, PipeStyle, viewportKeys, CustomProperties, MapButton(), MapButtonProps, NodeStyle (+21 more)
+Cohesion: 0.08
+Nodes (35): buildPipeStyle(), CustomProperties, PipeStyle, viewportKeys, CustomProperties, MapButton(), MapButtonProps, NodeStyle (+27 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.06
@@ -199,7 +199,7 @@ Nodes (5): formatDate(), formatDateControlLabel(), getCalendarDays(), getMonthLa
   Frontend/public/assets/burger-right.png · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **164 isolated node(s):** `PreToolUse`, `$schema`, `plugin`, `@opencode-ai/plugin`, `$schema` (+159 more)
+- **168 isolated node(s):** `PreToolUse`, `$schema`, `plugin`, `@opencode-ai/plugin`, `$schema` (+163 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -219,4 +219,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `cn()` connect `Community 37` to `Community 32`, `Community 33`, `Community 35`, `Community 38`, `Community 40`, `Community 9`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **What connects `PreToolUse`, `$schema`, `plugin` to the rest of the system?**
-  _167 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _171 weakly-connected nodes found - possible documentation gaps or missing edges._

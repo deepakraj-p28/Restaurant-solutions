@@ -16,6 +16,7 @@ export type RingTone = "green" | "amber";
 export type DepthTier = "low" | "mid" | "high";
 export type NodeSize = "sm" | "md" | "lg" | "xl";
 export type PopupSide = "top" | "right" | "bottom" | "left";
+export type FlowWave = 1 | 2 | 3;
 
 export type Coordinate = {
   x: number;
@@ -51,6 +52,16 @@ const VIEWPORT_ASPECT_RATIO: Record<ViewportKey, number> = {
   tablet: 3 / 4,
   mobile: 9 / 16,
 };
+
+const homeNodeLevels = {
+  primary: ["central-kitchen"],
+  secondary: ["semi-kitchen", "bocca-bakery"],
+  tertiary: ["bocca-kalabhoomi", "terra-rosso"],
+} satisfies Record<string, NodeId[]>;
+
+const primaryNodeIds = new Set<NodeId>(homeNodeLevels.primary);
+const secondaryNodeIds = new Set<NodeId>(homeNodeLevels.secondary);
+const tertiaryNodeIds = new Set<NodeId>(homeNodeLevels.tertiary);
 
 export const motionSettings = {
   durationMs: 360,
@@ -234,11 +245,11 @@ export const homeConnections: HomeConnection[] = [
   { id: "bb-bl", from: "bocca-bakery", to: "bocca-lite", depth: "mid" },
   
   // Outer ring connections
-  { id: "mc-bk", from: "master-canteen", to: "bocca-kalabhoomi", depth: "low" },
+  { id: "mc-bk", from: "bocca-kalabhoomi", to: "master-canteen", depth: "low" },
   { id: "bk-bl", from: "bocca-kalabhoomi", to: "bocca-lite", depth: "low" },
   { id: "bl-sk", from: "bocca-lite", to: "semi-kitchen", depth: "low" },
   { id: "bc-bbs", from: "bocca-cafe", to: "bocca-book-store", depth: "low" },
-  { id: "bbs-tr", from: "bocca-book-store", to: "terra-rosso", depth: "low" },
+  { id: "bbs-tr", from: "terra-rosso", to: "bocca-book-store", depth: "low" },
   { id: "tr-bp", from: "terra-rosso", to: "bocca-patia", depth: "low" },
 ] as const;
 
@@ -259,6 +270,42 @@ export function getConnectedNodeIds(nodeId: NodeId): NodeId[] {
 
 export function isConnectionLinkedToNode(connection: HomeConnection, nodeId: NodeId): boolean {
   return connection.from === nodeId || connection.to === nodeId;
+}
+
+export function getConnectionFlowWave(connection: HomeConnection): FlowWave | null {
+  if (primaryNodeIds.has(connection.from)) {
+    return 1;
+  }
+
+  if (secondaryNodeIds.has(connection.from) && !primaryNodeIds.has(connection.to)) {
+    return 2;
+  }
+
+  if (
+    tertiaryNodeIds.has(connection.from) &&
+    !primaryNodeIds.has(connection.to) &&
+    !secondaryNodeIds.has(connection.to)
+  ) {
+    return 3;
+  }
+
+  return null;
+}
+
+export function getNodeFlowWave(nodeId: NodeId): FlowWave | null {
+  if (primaryNodeIds.has(nodeId)) {
+    return 1;
+  }
+
+  if (secondaryNodeIds.has(nodeId)) {
+    return 2;
+  }
+
+  if (tertiaryNodeIds.has(nodeId)) {
+    return 3;
+  }
+
+  return null;
 }
 
 export function getPipeGeometry(connection: HomeConnection, viewport: ViewportKey): PipeGeometry {

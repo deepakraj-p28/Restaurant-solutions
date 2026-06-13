@@ -12,6 +12,8 @@
   --ring-amber: #ff8013;
   
   --text-ink: #2c3e50;
+  --home-flow-cycle: 6600ms;
+  --home-flow-dot-size: clamp(6px, 0.52vw, 10px);
   
   position: relative;
   isolate: isolate;
@@ -88,6 +90,7 @@
   border: 0;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.1);
+  overflow: visible;
   
   /* Indented groove by default */
   box-shadow: 
@@ -135,6 +138,51 @@
   display: none;
 }
 
+.home-page--idle-flow .home-pipe-button--flow-wave-1 { --home-flow-delay: 0ms; }
+.home-page--idle-flow .home-pipe-button--flow-wave-2 { --home-flow-delay: 2100ms; }
+.home-page--idle-flow .home-pipe-button--flow-wave-3 { --home-flow-delay: 4200ms; }
+
+.home-page--idle-flow .home-pipe-button[class*="home-pipe-button--flow-wave"]::before {
+  content: "";
+  position: absolute;
+  inset: -3px 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent 0%, rgba(108, 225, 94, 0.58) 48%, transparent 100%);
+  filter: blur(4px);
+  opacity: 0;
+  pointer-events: none;
+  animation: home-pipe-flow-glow var(--home-flow-cycle) ease-in-out infinite;
+  animation-delay: var(--home-flow-delay);
+}
+
+.home-page--idle-flow .home-pipe-button[class*="home-pipe-button--flow-wave"] .home-pipe-button__shadow,
+.home-page--idle-flow .home-pipe-button[class*="home-pipe-button--flow-wave"] .home-pipe-button__body,
+.home-page--idle-flow .home-pipe-button[class*="home-pipe-button--flow-wave"] .home-pipe-button__shine {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 3;
+  display: block;
+  width: var(--home-flow-dot-size);
+  height: var(--home-flow-dot-size);
+  border-radius: 50%;
+  background: radial-gradient(circle, #f4fff2 0%, var(--ring-green) 48%, rgba(108, 225, 94, 0) 72%);
+  box-shadow: 0 0 9px var(--ring-green), 0 0 18px rgba(108, 225, 94, 0.75);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate3d(-50%, -50%, 0) scale(0.7);
+  animation: home-pipe-flow-dot var(--home-flow-cycle) var(--home-motion-easing) infinite;
+  animation-delay: var(--home-flow-delay);
+}
+
+.home-page--idle-flow .home-pipe-button[class*="home-pipe-button--flow-wave"] .home-pipe-button__body {
+  animation-delay: calc(var(--home-flow-delay) + 150ms);
+}
+
+.home-page--idle-flow .home-pipe-button[class*="home-pipe-button--flow-wave"] .home-pipe-button__shine {
+  animation-delay: calc(var(--home-flow-delay) + 300ms);
+}
+
 .home-node-wrap {
   --node-x: var(--node-x-desktop);
   --node-y: var(--node-y-desktop);
@@ -158,6 +206,10 @@
 .home-node-wrap--depth-low { --node-lift: 8px; z-index: 5; }
 .home-node-wrap--depth-mid { --node-lift: 16px; z-index: 6; }
 .home-node-wrap--depth-high { --node-lift: 24px; z-index: 7; }
+
+.home-node-wrap--flow-source-wave-1 { --home-source-flow-delay: 0ms; }
+.home-node-wrap--flow-source-wave-2 { --home-source-flow-delay: 2100ms; }
+.home-node-wrap--flow-source-wave-3 { --home-source-flow-delay: 4200ms; }
 
 .home-node-button {
   position: relative;
@@ -185,15 +237,17 @@
 
 /* Glowing Ring Light Effect (Outer 20%) */
 .home-node-button__halo {
+  --home-halo-rest-shadow:
+    0 0 20px var(--ring-color),
+    0 0 40px var(--ring-color),
+    inset 0 0 10px rgba(0, 0, 0, 0.2),
+    inset 0 0 15px rgba(255, 255, 255, 0.8);
+
   position: absolute;
   inset: 0; /* Covers the whole button, placeholder covers the inner 80% */
   border-radius: 50%;
   background: var(--ring-color);
-  box-shadow: 
-    0 0 20px var(--ring-color), /* Outer Glow */
-    0 0 40px var(--ring-color), /* Diffuse Glow */
-    inset 0 0 10px rgba(0, 0, 0, 0.2), /* Subtle inner shade */
-    inset 0 0 15px rgba(255, 255, 255, 0.8); /* Core hot white light */
+  box-shadow: var(--home-halo-rest-shadow);
   opacity: 0.85;
   transition: all 400ms ease;
   pointer-events: none;
@@ -260,6 +314,11 @@
   opacity: 0.3;
 }
 
+.home-page--idle-flow .home-node-wrap[class*="home-node-wrap--flow-source-wave"] .home-node-button__halo {
+  animation: home-node-source-bloom var(--home-flow-cycle) ease-in-out infinite;
+  animation-delay: var(--home-source-flow-delay);
+}
+
 .home-node-label {
   position: absolute;
   top: calc(100% + 12px);
@@ -275,6 +334,59 @@
 
 .home-node-wrap.is-dimmed .home-node-label {
   opacity: 0.4;
+}
+
+@keyframes home-pipe-flow-dot {
+  0% {
+    left: 0;
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0) scale(0.65);
+  }
+  4% {
+    opacity: 1;
+  }
+  22% {
+    left: 100%;
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 0) scale(1);
+  }
+  28% {
+    left: 100%;
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0) scale(0.8);
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0) scale(0.8);
+  }
+}
+
+@keyframes home-pipe-flow-glow {
+  0%, 32%, 100% {
+    opacity: 0;
+  }
+  8%, 22% {
+    opacity: 0.55;
+  }
+}
+
+@keyframes home-node-source-bloom {
+  0%, 16%, 100% {
+    filter: brightness(1);
+    opacity: 0.85;
+    box-shadow: var(--home-halo-rest-shadow);
+  }
+  7%, 14% {
+    filter: brightness(1.35);
+    opacity: 1;
+    box-shadow: 
+      0 0 34px var(--ring-color),
+      0 0 70px var(--ring-color),
+      0 0 96px rgba(108, 225, 94, 0.58),
+      inset 0 0 10px rgba(0, 0, 0, 0.12),
+      inset 0 0 26px rgba(255, 255, 255, 0.94);
+  }
 }
 
 /* Glossy Smoked Glass Popups */
@@ -357,5 +469,32 @@
     --pipe-length: var(--pipe-length-mobile); --pipe-angle: var(--pipe-angle-mobile);
   }
   .home-node-wrap { --node-x: var(--node-x-mobile); --node-y: var(--node-y-mobile); }
+  .home-node-label {
+    width: min(7rem, 31vw);
+    max-width: min(7rem, 31vw);
+    line-height: 1.15;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-page--idle-flow .home-pipe-button[class*="home-pipe-button--flow-wave"]::before,
+  .home-page--idle-flow .home-pipe-button[class*="home-pipe-button--flow-wave"] .home-pipe-button__shadow,
+  .home-page--idle-flow .home-pipe-button[class*="home-pipe-button--flow-wave"] .home-pipe-button__body,
+  .home-page--idle-flow .home-pipe-button[class*="home-pipe-button--flow-wave"] .home-pipe-button__shine,
+  .home-page--idle-flow .home-node-wrap[class*="home-node-wrap--flow-source-wave"] .home-node-button__halo {
+    animation: none;
+  }
+
+  .home-page--idle-flow .home-pipe-button[class*="home-pipe-button--flow-wave"] .home-pipe-button__shadow,
+  .home-page--idle-flow .home-pipe-button[class*="home-pipe-button--flow-wave"] .home-pipe-button__body,
+  .home-page--idle-flow .home-pipe-button[class*="home-pipe-button--flow-wave"] .home-pipe-button__shine {
+    display: none;
+  }
+
+  .home-page--idle-flow .home-pipe-button[class*="home-pipe-button--flow-wave"]::before {
+    opacity: 0.18;
+  }
 }
 
